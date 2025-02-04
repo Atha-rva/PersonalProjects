@@ -1,0 +1,121 @@
+[
+    {
+        "index": 0,
+        "timestamp": "2025-01-28 08:59:04.799824",
+        "data": "Genesis Block",
+        "previous_hash": "0",
+        "hash": "1a85b0d376a46c40c4d3dd0a089565183ba814973ee92c820a83c9a4f99e13f2"
+    },
+    {
+        "index": 1,
+        "timestamp": "2025-01-28 08:59:31.720342",
+        "data": "Temperature: 6.12, Location: Location-16",
+        "previous_hash": "1a85b0d376a46c40c4d3dd0a089565183ba814973ee92c820a83c9a4f99e13f2",
+        "hash": "3b21f4eb4fe9da88dcd8d8aeb78acab56b1426a0b6d203f8dbb5417b2d629b6e"
+    },
+    {
+        "index": 2,
+        "timestamp": "2025-01-28 08:59:35.955599",
+        "data": "Temperature: 16.87, Location: Location-25",
+        "previous_hash": "3b21f4eb4fe9da88dcd8d8aeb78acab56b1426a0b6d203f8dbb5417b2d629b6e",
+        "hash": "24013ae2ab661d572baaac9916746dbd299558aa1d16da1c86e49e1b4486387d"
+    },
+    {
+        "index": 3,
+        "timestamp": "2025-01-28 08:59:36.431274",
+        "data": "Temperature: 17.8, Location: Location-55",
+        "previous_hash": "24013ae2ab661d572baaac9916746dbd299558aa1d16da1c86e49e1b4486387d",
+        "hash": "29fc6bd407ca0542e7a3589f6db2e4453aa35fdbc8fa0acba69ea046f2226338"
+    },
+    {
+        "index": 4,
+        "timestamp": "2025-01-28 08:59:37.391188",
+        "data": "Temperature: 11.47, Location: Location-83",
+        "previous_hash": "29fc6bd407ca0542e7a3589f6db2e4453aa35fdbc8fa0acba69ea046f2226338",
+        "hash": "1e539319d5be11a3938076f6a58cbe68742aa3b586a3e96c92fa2fd58a8dac79"
+    },
+    {
+        "index": 5,
+        "timestamp": "2025-01-28 08:59:37.695236",
+        "data": "Temperature: 15.25, Location: Location-15",
+        "previous_hash": "1e539319d5be11a3938076f6a58cbe68742aa3b586a3e96c92fa2fd58a8dac79",
+        "hash": "04962c71a2dd3cd2ccc60992767213acc792f0971a3abecbd0fe060225d58b27"
+    },
+    {
+        "index": 6,
+        "timestamp": "2025-01-28 08:59:37.890241",
+        "data": "Temperature: 11.28, Location: Location-35",
+        "previous_hash": "04962c71a2dd3cd2ccc60992767213acc792f0971a3abecbd0fe060225d58b27",
+        "hash": "5ac221bbb26f6b0dba87c6015898699fb3403eb6c69f8f8d6343ee5630719cb6"
+    },
+    {
+        "index": 7,
+        "timestamp": "2025-01-28 08:59:38.068860",
+        "data": "Temperature: 38.96, Location: Location-62",
+        "previous_hash": "5ac221bbb26f6b0dba87c6015898699fb3403eb6c69f8f8d6343ee5630719cb6",
+        "hash": "4217c93310cd28a6b6807790d1412057936006695db9035836f0142fade61526"
+    },
+    {
+        "index": 8,
+        "timestamp": "2025-01-28 08:59:38.249386",
+        "data": "Temperature: -6.32, Location: Location-26",
+        "previous_hash": "4217c93310cd28a6b6807790d1412057936006695db9035836f0142fade61526",
+        "hash": "fa76c4f62400c96ca90633b01ee91529d72d66af6aa395b9217de4a340d4fca9"
+    },
+    {
+        "index": 9,
+        "timestamp": "2025-01-28 08:59:38.436827",
+        "data": "Temperature: -7.82, Location: Location-78",
+        "previous_hash": "fa76c4f62400c96ca90633b01ee91529d72d66af6aa395b9217de4a340d4fca9",
+        "hash": "90691600f07c0344b2622890edb2a0a923bf9265dd446ed4ce84a4e563c7cf01"
+    },
+    {
+        "index": 10,
+        "timestamp": "2025-01-28 08:59:38.607983",
+        "data": "Temperature: 19.31, Location: Location-24",
+        "previous_hash": "90691600f07c0344b2622890edb2a0a923bf9265dd446ed4ce84a4e563c7cf01",
+        "hash": "d0ce81f3ab21f3c41708c67bc2c31d062bb23828d546ae68ce10c010b076d8cc"
+    },
+    {
+        "index": 11,
+        "timestamp": "2025-01-28 08:59:38.779173",
+        "data": "Temperature: 28.71, Location: Location-47",
+        "previous_hash": "d0ce81f3ab21f3c41708c67bc2c31d062bb23828d546ae68ce10c010b076d8cc",
+        "hash": "8f730dfb5e7f99c5dbee0ec824cc1514b587e4cd18a518ac2f81c645f5c7bbef"
+    },
+    {
+        "index": 12,
+        "timestamp": "2025-01-28 08:59:38.949627",
+        "data": "Temperature: 39.12, Location: Location-53",
+        "previous_hash": "8f730dfb5e7f99c5dbee0ec824cc1514b587e4cd18a518ac2f81c645f5c7bbef",
+        "hash": "a3c15026f0a7c9a55a1fb5e9353ec3fd401e7eef426d36b2b35bf319d3093bef"
+    },
+    {
+        "index": 13,
+        "timestamp": "2025-01-28 08:59:39.121119",
+        "data": "Temperature: 26.03, Location: Location-58",
+        "previous_hash": "a3c15026f0a7c9a55a1fb5e9353ec3fd401e7eef426d36b2b35bf319d3093bef",
+        "hash": "9474a71505c5999480070b41698c0a843a2609b21d911a917f8289794598f469"
+    },
+    {
+        "index": 14,
+        "timestamp": "2025-01-28 08:59:39.310309",
+        "data": "Temperature: 20.37, Location: Location-42",
+        "previous_hash": "9474a71505c5999480070b41698c0a843a2609b21d911a917f8289794598f469",
+        "hash": "5e40f29b85d40e8aba32c536d2911ad62d8235fcd166278f28cc9d37a0aea134"
+    },
+    {
+        "index": 15,
+        "timestamp": "2025-01-28 08:59:39.487897",
+        "data": "Temperature: 13.98, Location: Location-72",
+        "previous_hash": "5e40f29b85d40e8aba32c536d2911ad62d8235fcd166278f28cc9d37a0aea134",
+        "hash": "2903ba7ad84264a41adbdaca85e28f185417a8f15c3ce69fbdf70cb3a6d8e664"
+    },
+    {
+        "index": 16,
+        "timestamp": "2025-01-28 08:59:39.651554",
+        "data": "Temperature: 34.39, Location: Location-44",
+        "previous_hash": "2903ba7ad84264a41adbdaca85e28f185417a8f15c3ce69fbdf70cb3a6d8e664",
+        "hash": "494f9ac7105da4587b1576bc5f5ffbc9cead316b7d9eaab77c2ba7460e421cc9"
+    }
+]
