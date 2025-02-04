@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Class & Sub Class</title>
+  </head>
+  <body>
+    <script>
+      //   // Super Class
+      //   var Mobile = function () {};
+
+      //   // Prototype Method....
+      //   Mobile.prototype.getModel = function () {
+      //     return this.model;
+      //   };
+
+      //   // Sub Class
+      //   var Samsung = function (model, price) {
+      //     this.model = model;
+      //     this.price = price;
+      //   };
+
+      //   // Sub Class
+      //   var Lenovo = function (model) {
+      //     this.model = model;
+      //   };
+
+      //   // Inheritance.....
+      //   Samsung.prototype = Object.create(Mobile.prototype);
+
+      //   // To reset a Constructor....
+
+      //   Samsung.prototype.construtor = Samsung;
+
+      //   // Inheritance.....
+      //   Lenovo.prototype = Object.create(Mobile.prototype);
+      //   // To Reset a Construtor....
+
+      //   Lenovo.prototype.construtor = Lenovo;
+
+      //   // Object Creation
+      //   var Galaxy = new Samsung("Galaxy", 6000);
+      //   console.log(Galaxy);
+      //   console.log(Galaxy.model);
+      //   console.log(Galaxy.price);
+      //   console.log(Galaxy.getModel());
+
+      //   // Note :- It is Present Only in the Samsung prototype Object only.....
+
+      //   Samsung.prototype.getprice = function(){
+      //     return this.price;
+      //   }
+
+      //   var phab2 = new Lenovo("IPhone Model");
+      //   console.log(phab2);
+
+      //   console.log(Galaxy.getprice());
+
+      // Created a Common Method for a Inheritance.....
+
+      // 2.
+
+      // Function for Inheritance....
+
+      //  function extend(child, parent){
+      //     child.prototype = Object.create(parent.prototype);
+      //     child.prototype.construtor = child;
+      //  }
+      // // Super Class
+
+      // var Mobile = function () {};
+
+      // // Prototype Method....
+      // Mobile.prototype.getModel = function () {
+      //   return this.model;
+      // };
+
+      // // Sub Class
+      // var Samsung = function (model, price) {
+      //   this.model = model;
+      //   this.price = price;
+      // };
+
+      // // Sub Class
+      // var Lenovo = function (model) {
+      //   this.model = model;
+      // };
+
+      // // Inheritance
+
+      // extend(Samsung, Mobile);
+      // extend(Lenovo, Mobile);
+
+      // // Object Creation
+      // var Galaxy = new Samsung("Galaxy", 6000);
+      // console.log(Galaxy);
+      // console.log(Galaxy.model);
+      // console.log(Galaxy.price);
+      // console.log(Galaxy.getModel());
+
+      // // Note :- It is Present Only in the Samsung prototype Object only.....
+
+      // Samsung.prototype.getprice = function(){
+      //   return this.price;
+      // }
+
+      // var phab2 = new Lenovo("IPhone Model");
+      // console.log(phab2);
+
+      // console.log(Galaxy.getprice());
+
+      // 3.
+      var Mobile = function (model) {
+        this.model = model;
+      };
+
+      Mobile.prototype.getModel = function () {
+        return this.model;
+      };
+
+      var Samsung = function (model, price) {
+        Mobile.call(this, model);
+        this.price = price;
+      };
+
+      // Inheritance
+      Samsung.prototype.getModel = Object.create(Mobile.prototype);
+      // Rest the Construtor....
+      Samsung.prototype.construtor = Samsung;
+
+      var Galaxy = new Samsung("galaxy", 3000);
+      console.log(Galaxy);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factory Functions in Javascript</title>
+  </head>
+  <body>
+    <script>
+      // Factory Function
+      //   function mobile() {
+      //     return {
+      //       Rahul: 100,
+      //       price: function () {
+      //         return "Price: Rs 30000";
+      //       },
+      //     };
+      //   }
+      //   let result = mobile();
+      //   console.log(result);
+      //   console.log(result.Rahul);
+      //   console.log(result.price);
+      //   console.log(result.price());
+
+      // factory Function with parameters....
+
+      function mobile(mobile_no) {
+        return {
+          Rahul: mobile_no,
+          price: function () {
+            return "Price: Rs 30000";
+          },
+        };
+      }
+
+      var samsung = mobile();
+      console.log(samsung);
+      console.log(samsung.Rahul);
+      console.log(samsung.price);
+      console.log(samsung.price());
+
+      var lg = mobile(9860866769);
+      console.log(lg);
+      console.log(lg.Rahul);
+      console.log(lg.price);
+      console.log(lg.price());
+    </script>
+  </body>
+</html>

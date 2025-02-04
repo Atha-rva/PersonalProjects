@@ -1,0 +1,2668 @@
+* Nested For Loop 
+
+for loop inside for loop 
+
+
+Syntax :- 
+
+for (initialization; test condition; increment or decrement)
+{
+    block of statements;
+    for(initialization; test condition; increment or decrement)
+    {
+        block of statements;
+    }
+}
+
+
+ex :- 
+
+for (var i = 0; i < 3; i++){
+    document.write(i+"Outer For Loop <br/>");   // Outer For Loop
+    for (var j = 0; j < 5; j++)
+    {
+        document.write(j+"Inner For loop <br/>"); // Inner for loop
+    }
+}
+
+
+* While Loop 
+
+  * The while loop keeps repeating an action until an associated 
+    condition returns false.... 
+
+    Syntax :- 
+
+    while(test condition)
+    {
+        body of the loop;
+        increment/ decrement;
+    }
+
+    ex:- 
+        var i=0;
+        while(i<5){
+            document.write(i+"<br/>");
+            i++;
+        }
+
+
+* This case is used most of the time in Real Project.... 
+ When a while (Condition is true (Means it is always true))
+
+        var i = 0;
+        while(true){
+         if(i==3)
+         {
+            break;
+         }
+         document.write(i);
+         i++;
+        }
+
+
+
+* Nested While Loop.....
+
+
+*  One While Loop Inside another while loop 
+
+
+        var i=0;
+        while(i<5){
+            document.write(i+" <b>Outer Loop</b> <br/>");
+            i++;
+            var j=0;
+            while(j<10){
+                document.write(j+"Inner Loop <br/>");
+                j++;
+            }
+        }
+
+
+* Do While Loop 
+
+  * The do while loop is similar to while loop but the condition is 
+    checked after the loop body is executed. this ensure that the loop 
+    body is run at least once....
+
+
+Syntax :- 
+
+do{
+    statements;
+}while(test condition)
+
+
+ex:- 
+
+      var i = 0;
+      do {
+        document.write(i + "<br/>");
+        i++;
+      } while (i < 5);
+
+
+* Note :- 
+
+  Multiple Times This Case is Used in Projects When a DoWhile Condition
+  is true.... 
+
+
+      var i = 0;
+      do {
+        if (i == 3) {
+          break;
+        }
+        document.write(i + "<br/>");
+        i++;
+      } while (true);
+
+
+
+* Nested Do While Loop.... 
+
+      var i = 0;
+      do {
+        document.write(i + "<b>Outer Loop </b> <br/>");
+        i++;
+
+        var j = 0;
+        do {
+          document.write(j + "<b>Inner Loop</b> <br/>");
+          j++;
+        } while (j < 3);
+      } while (i < 5);
+
+
+
+* Break & Continue Statements 
+
+
+Break Statement 
+
+  * In in a loop, it breaks out of the loop and continues executing the code after the loop (if any).
+
+      for(var i=0;i<5;i++){
+        if(i==3){
+          break;
+        }
+        document.write(i+"<br/>");
+      }
+
+Continue Statement
+
+*  The difference between continue and the break statement, is instead of "jumping out" of a loop, the continue statement "jumps over" one iteration in the loop.
+
+
+      for(var i=0;i<5;i++){
+        if(i==3){
+          continue;
+        }
+        document.write(i+"<br/>");
+      }
+
+* Functions 
+
+  * Function are subprograms which are used to compute a value or perform 
+    a task....
+
+
+* Types of Function 
+
+- Library or Built-in Functions 
+  
+  Ex:-  valueOf() , write(), alert() etc 
+
+- User-defined functions 
+
+*  User will decide what this function will do actually.... 
+
+
+
+* Creating and Calling a Function.... 
+
+
+  * Creating a Function 
+
+   Syntax:- 
+
+   function function_name()
+   {
+      // Block of statements;
+   }
+
+
+   Ex:- 
+
+        function display(){                  // Creating a Function
+            document.write("Geeky Shows");
+        }
+        display();   // Callingn a Function
+
+
+  * Calling a Function 
+
+
+  Syntax:- 
+
+  function_name();
+   
+   ex:- 
+    display();
+
+
+* Rules for writing a function name
+
+  * function name only starts with a letter, an underscore( _ ).
+  * function name cannot start with a number.
+  * donot use a reserved keywords.... 
+  * function names are case-sensitive in a javascript.....
+
+
+Q) To Display a geekyshows 5 times....?
+
+
+        function display() {
+            // Creating a Function
+            document.write("Geeky Shows <br/>");
+        }
+        for (var i = 0; i < 5; i++) {
+          display(); // Calling a Function
+      }
+
+
+
+* How Function Call Works in a Javascript.... 
+
+      document.write("First Line <br/>");
+      document.write("GeekyShows <br/>");
+      function display() {
+        document.write("Inside Function <br/>");
+      }
+      document.write("Last Line <br>");
+      display();
+
+
+      Output:- 
+      First Line
+      GeekyShows
+      Last Line
+      Inside Function
+
+
+      * When a Function Call is Happened at that time only that Particular
+        function is being executed..... 
+
+
+* Functions with parameters....
+
+
+*  Without any parameters
+
+function display() {
+  document.write("Function without any parameters");
+    }
+display();
+
+
+* functions with parameters
+
+Syntax:- 
+function function_name (parameter1, parameter2,.....){
+    block of statements
+}
+
+
+ex:- 
+
+function display(name){
+  document.write(name);
+}
+
+*  Javascript function definitions do not specify data types for parameters.
+
+    function addition(num1,num2){
+        return num1 + num2;
+    }
+
+    var result = addition(10,20);
+    document.write(result);
+
+
+
+*  Javascript functions do not perform type checking on the passed arguements.
+
+    function addition(num1,name){
+        document.write(num1+""+name);
+    }
+
+    addition(10,"Atharva");
+
+
+
+*  Javascript functions do not check the number of arguements recived....
+    function addition(num1){
+        return num1;
+    }
+
+    var result = addition(10,20);
+    document.write(result);
+
+    Output :- 10
+
+
+Syntax:- 
+
+
+Function Declaration.....
+function function_name (parameter1, parameter2){
+    block of statements
+}
+
+
+// Function Calling....
+function_name(arguement1 , arguement2);
+
+
+ex:- 
+
+
+    function addition(num1,num2){
+        return num1 + num2;
+    }
+
+    var result = addition(10,20);
+    document.write(result);
+
+
+* Function Arguement Missing in Javascript
+
+
+* If a function is called with Missing arguements, the missing values 
+  are set to undefined....
+
+// Code Snippets
+
+        function display(a,b,c){
+            document.write("A: "+a+" B: "+b+" C: "+c);
+        }
+        display(5,10);
+
+Output:- A: 5 B: 10 C: undefined
+
+
+
+*  Arguement Object (Important)
+
+* The Arguments object contains an array of the arguments used when 
+  the function was called.....
+
+
+* This Object contains an entry for each argument passed to the 
+  function, the first entry's index starting at 0. The arguments object is 
+  not an array. It is similar to an Array, but does not have any Array properties 
+  expect length.... 
+
+
+  ex:- 
+
+  function add(num1 , num2){
+    // arguments[0] = 10
+    // arguments[1] = 20
+  }
+
+  add(10,20);
+
+
+  Example :- 
+
+
+          function display(name1, name2)
+        {
+            document.write(arguments[0]);
+            document.write(arguments[1]);
+
+        }
+        display("Atharva Deelip Deshmukh","Shankarrao Deshmukh");
+
+
+Addition of Two Numbers Using a Arguments Object 
+
+
+        function display(name1, name2)
+        {
+            document.write(arguments[0] + arguments[1]);
+
+        }
+        display(10,20);
+
+        Output:- 30
+
+Note :- We are able to change the value also of the argument object.... 
+
+
+
+      function display(num1, num2) {
+        arguments[0] = 40;     // Changeing the value Internally in function....
+        document.write(arguments[0] + arguments[1]);
+      }
+      display(10, 40);
+
+    function display(name1,name2){
+         arguments[0]="Atharva";
+         document.write(name1+" "+name2);
+     };
+     display("Johan","Deshmukh");
+
+
+* length Property in a arguments Object.... 
+
+To Find Whole Arguments Array (Objects) Length....
+
+    function display(name1,name2){
+        document.write(arguments.length);
+    }
+    display("Atharva","Deshmukh");
+
+
+// To Find a Specific Length of arguments index.....
+    function display(name1,name2){
+        document.write(arguments[0].length);
+    }
+    display("Atharva","Deshmukh");
+
+
+
+// To Display the value using a for loop..... 
+
+
+    function display(){
+        for(var i=0; i<arguments.length;i++){
+            document.write(arguments[i]+" ");
+        }
+    }
+    display(10, 20, 30, 40, 50);
+
+
+2. callee function used to display the info of a function 
+
+        function display(){
+            document.write(arguments.callee);
+    }
+    display(10, 20, 30, 40, 50);
+
+
+    Output:- 
+
+    function display(){ document.write(arguments.callee); }
+
+
+
+* Many Function Arguments 
+
+  * If a function is called with too many arguments, these arguments can be reached using
+    the arguments object which is a built-in.... 
+
+
+      function add(a, b) {
+        document.write("A: " + a + "B: " + b);
+        document.write("C: " + arguments[2] + "D: " + arguments[3]);
+        // document.write("C: "+c+"D: "+d);    // No Output or result....
+      }
+      add(10, 20, 30, 40);
+
+  
+*  Default Parameters
+
+Syntax:- 
+
+function function_name(para1, para2, para3="Value")
+{
+   Block of Statement;
+}
+
+Syntax:- 
+
+// Problem Undefined Output....
+
+function function_name(para1, para2="value", para3) // problem undefined 
+{
+   Block of Statement
+}
+
+
+Note :- ALways Write a default paramter value at the end , not in the beginning 
+or in the middle.....
+
+
+ex:- 
+
+        function add(para1, para2 , para3=20)
+        {
+            document.write(para1 + para2 + para3);
+        }
+        add(10,20);
+
+Note :- 
+
+1. Javascript also allows the use of arrays and null as a default 
+   values....
+
+ex:- 
+
+function add(a,b,c=null)
+{
+   document.write("A= "+a+"<br/>");
+   document.write("B= "+b+"<br/>");
+   document.write("C= "+c+"<br/>");
+}
+
+add(10,20);     // 10 20 null 
+add(10,20,30);  // 10  20  30
+
+
+
+// We can use Array also.... 
+
+
+function add(a=[101]){
+    document.write("A= "+a[0]+"<br>");
+}
+
+add([10]);
+add();
+
+
+Output :- 
+
+A= 10
+A= 101
+
+
+*  Rest Parameter (Important Concept).....
+
+  * The rest parameter allows to represent an indefinite number of a 
+    arguments as an array.... 
+
+
+Syntax:- 
+
+  function function_name(...args)
+  {
+     Block of statement
+  }
+
+
+note :-  ...args ----> It is a rest operator.... 
+
+Syntax:- 
+
+function function_name(a,...args){
+    Block of Statement;
+}
+
+
+* rest parameter is actually an array only in which we can insert 
+multiple values.... 
+
+
+        function show(...nums){
+            document.write(nums);
+        }
+        show(10 , 20 , 30 ,40,50);
+
+Output:- 10,20,30,40,50
+
+
+
+Case 1:- 
+
+ function show(a,...nums){
+    document.write(nums);
+  }
+  show(10 , 20 , 30 ,40,50);
+
+  Output:- 20,30,40,50 
+
+
+* Has because the first value is assigned to the a and 
+  all other values are assigned to the nums which is rest paramter....
+
+
+* If we want to access a particular value of a nums then 
+
+
+        function show(a,...nums){
+            document.write(nums[2]);
+        }
+        show(10 , 20 , 30 ,40,50);
+
+Output:- 40
+
+
+* Note :- rest paramter should always to declared at the end....
+
+
+        function show(a,...nums,b){
+            document.write(nums[2]);
+        }
+        show(10 , 20 , 30 ,40,50);
+
+
+Uncaught SyntaxError: Rest parameter must be last formal parameter
+
+
+
+*  Rest Vs Arguments 
+
+
+*  There are three main differences between rest parameters and the 
+   arguments object:-
+
+  
+   * Rest parametrs are only the ones that haven't been given a 
+     separate name, while the arguments object contains all 
+     arguments passes to the function.... 
+
+
+  *  The arguments object is not a real array, while Rest Parameters 
+     are Array instances, meaning like sort, map, forEach or pop 
+     can be applied on it directly..... 
+
+  
+  *  The arguments object has additional functionality specific to 
+      itself (like callee property).....
+
+
+
+        // Rest Paramters 
+        function restShow(a,...args){
+            console.log("a: "+a);
+            console.log(args);
+        }
+        restShow(10,20,30,40,50);
+
+
+        // Arguments Object
+        function show(a){
+            console.log("a: "+a);
+            console.log(arguments);
+        }
+        show(10,20,30,40,50);
+
+Output:- 
+
+// Rest Parameter
+a: 10
+[20, 30, 40, 50]
+
+
+// Argument Object 
+ a: 10
+Arguments(5) [10, 20, 30, 40, 50, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+
+
+
+* Return Statement
+
+  * A return Statement may be return Any type data, including arrays,
+    and objects.
+
+  Syntax:- 
+
+  return(variable or expression);
+
+  ex:- 
+
+  return(3);
+  return(a+b);
+
+
+  Syntax:- 
+
+  function function_name(para1, para2, .....)
+  {
+     Block of statement;
+     return
+  }
+
+
+
+  *  Javascript has two scopes :- 
+
+	* Global
+	* Local 
+	
+*  A Variable that is declared outside a function definition is a global variable,
+   and its value is accessible and modifiable throughout your program....
+   
+   
+   (Not IMP) :- In a web browser, global variables are deleted when you close the browser
+   window(or tab), but remain available to new pages loaded into the same window....
+   
+   
+   var a=10;  // Global Variable
+   
+   function add(b){
+		return (a+b);  // a is a global variable 
+   }
+
+
+
+*  Local Scope 
+
+  * It is declared inside a function & It is created and destroyed every time when a function 
+    is executed , cannot be accessed outside a function... 
+  
+
+  * If variable is not declared with var then it is consider as a global variable....
+
+          function display(){
+            a=20;                      // Global variable.... 
+            document.write(a+"<br/>");
+        }
+        display();
+        document.write(a);
+
+        Output:-
+        20
+        20 
+
+
+
+        // With var declaration.... 
+
+
+        function add(b){
+          var a=10;  // Local Variable 
+          return (a+b);
+        }
+        document.write(add(20));
+
+
+        Output:- 
+        30
+
+
+        function word(){
+            var j="I am Local variable";
+            document.write(j+"<br/>");
+        }
+        word();
+        document.write(j+"<br/>");
+
+
+        Output:- I am Local variable
+
+
+
+    
+    * Variable Hoisting 
+
+      * Hoisting is Javascript's default behaviour  of moveing declaration to the top of the function, or the top of the global 
+        context, if outside a function.... 
+
+
+      Example :- 
+
+      var a;  // variable declaration....
+      a=10;  // variable Initialization....
+
+
+      var a = 10;
+
+      var a;
+      a = 10;
+
+
+    Ex:- 
+
+    * We Write like this 
+
+        var a=10;
+        document.write(a);
+        var b=20;
+
+
+
+    * How Javascript Compiles It.... 
+
+    var a;
+    var b;
+    a=10;
+    document.write(a);
+    b=20;
+
+
+
+    Note :- 
+
+    1.  A variable can be used before it has been declared.... 
+
+    ex:- 
+
+    a=10;
+    document.write(a);
+    var a;
+
+
+
+    Compile Phase 
+
+    var a;
+    a=10;
+    document.write(a);
+
+
+    2. Only variable declarations are hoisted to the top, not variable initialization...
+
+
+    we Write Like this 
+
+    var a=10;
+    document.write(a+""+b);
+    var b=20;
+
+
+
+    Compile Phase 
+
+    var a=10;
+    var b;
+    document.write(a+""+b);
+    b=20;
+
+
+
+* Closure Concept.... 
+
+   *  A closure is a function having access to the parent scope. It preserve the data from outside....
+   *  A closure is an inner function that has access to the outer (enclosing) function's variables....
+
+
+   *  We Actually Learn the closure concepts for the nested functions.... 
+   * The Function which is used to preserve the data which is present
+     outside of it... 
+
+
+
+
+   for every closure we have three scopes :- 
+
+   *  local Scope (Own Scope)
+   *  Outer Functions Scope 
+   *  Global Scope 
+
+
+
+        var i=10;
+        function show(){
+            var j=20;
+            document.write(j+"<br/>");
+            document.write(i+"<br/>");
+        }
+        show();
+
+
+  * The document.write(i+"<br/>"); which is present in  function has able to access the outer data which is 
+    defined.... 
+
+
+      function show() {
+        var j = "J a Local variable of outer Function";
+        document.write(j+"<br/>");
+        function innerFun(){
+            var k="K is a Local Variable of inner function";
+            document.write(k+"<br/>");
+            document.write(j+"<br/>");
+        }
+        innerFun();
+      }
+      show();
+
+Note :- We are able to access j inside a inner function (innerfun()) so we are able to access the outer data in the inner function.... 
+
+
+* But we are unable to access the inner function data in outer functions....
+
+
+      function show() {
+        var j = "J a Local variable of outer Function";
+        document.write(j+"<br/>");
+        function innerFun(){
+            var k="K is a Local Variable of inner function";
+            document.write(k+"<br/>");
+            document.write(j+"<br/>");
+        }
+        innerFun();
+        // document.write(k+"<br/>");  unable to access the variable outer side a inner function.....
+      }
+      show();
+
+Error:- 
+
+Uncaught ReferenceError: k is not defined
+    at show (index.html:27:24)
+    at index.html:29:7
+
+
+* Because We are unable to access the inner function data or context in the outer function.... 
+
+Output:- 
+
+J a Local variable of outer Function
+K is a Local Variable of inner function
+J a Local variable of outer Function
+
+
+
+* function Expression for a Javascript
+
+  * When we create a function and assign it to a variable, known as a 
+    function expression.
+
+
+  ex:- 
+
+  var myfun = function show(){
+    document.write("Geeky Shows...");
+  };
+  myfun();
+
+
+  Note :- 
+
+  * You can't call function expression before function definition...
+  * justification :- Function expressions in javascript are not hoisted 
+    , unlike function declarations....
+
+    
+
+  for ex:- 
+
+  myfun();  ----> wrong method....
+  var myfun = function show(){
+    document.write("Geeky shows);
+  } 
+
+
+
+        show();  // we can call a function  before also....
+        // function declaration
+        function show(){
+            document.write("Atharva Deshmukh");
+        }
+        show();
+
+        // doc();
+        // function Expression....
+        var doc= function show(){
+            document.write("MS Dhoni");
+        }
+        doc();
+
+
+Output :- 
+
+Atharva Deshmukh
+MS Dhoni
+
+
+* Anonymous Functions... 
+
+  * Anonymous functions allow the creation of functions which have 
+    no specified name...
+
+    * Can be stored in a variable.. 
+    * Can be Returned in a Functions...
+    * One Function can return a Anonymous functions.... 
+    * Can be pass in a function...
+
+
+  Syntax:- 
+
+  function() {
+    body of function;
+  };
+
+  * In Function Expression we need to write a ; semicolon if we use a Anonymous functions.... 
+
+  
+* Store Anonymous Function in Variable... 
+
+  ex:- 
+
+// Anonymous function with no parameters...
+
+  var a = function() {
+    document.write("Geeky Shows");
+  }
+  a();
+
+
+  // Anonymous function with parameters...
+
+  var a = function(x,y){
+    var c=x+y;
+    document.write(c+"<br/>");
+  }
+
+
+* Passing Anonymous function as a Arguments in javascript
+
+function disp(myfun){
+  return myfun();
+}
+
+document.write(disp(function() {
+  retrun "Geeky Shows";
+}));
+
+
+
+ex:- 
+
+
+function disp(myfun){
+            return myfun;
+        }
+
+document.write(disp("Atharva Deshmukh"));
+
+Output:- 
+Atharva Deshmukh
+
+
+
+ex2:- 
+
+    function disp(myfun){
+        return myfun;
+    }
+
+    document.write(disp(
+        function(){
+            // document.write("Atharva Deshmukh");
+            return "Atharva Deshmukh";
+        }
+    ))
+
+
+note:- 
+* Running Algorithm.... 
+
+disp() is called it will return a 
+
+this function 
+
+        function(){
+            // document.write("Atharva Deshmukh");
+            return "Atharva Deshmukh";
+        }
+        // Anonymous function 
+
+
+* That Anonymous function will be assigned to the myfun 
+
+it will look like this 
+
+myfun = function(){
+  return "Atharva Deshmukh";
+}
+
+
+if we write in return such that like that 
+
+return myfun;
+
+ouput:- 
+function(){
+  return "Atharva Deshmukh";
+}
+
+
+return myfun();
+
+output:- 
+Atharva Deshmukh
+
+
+* Returning a Anonymous function in a Javascript....
+
+
+
+        function disp(a){
+            return function(b){
+                return a + b;
+            };
+        }
+        var result = disp(10);
+        // result(20);
+        document.write(result(20));
+
+
+ disp(10) return a anonymous function...
+
+ assign that disp() to any variable and then call it... 
+
+
+ var result = disp(10);
+ document.write(result(20));
+
+
+
+* Arrow functions....
+
+  *  An arrow expression has a shorter syntax compared  to function expressions. arrow functions are always anonymous....
+
+  Syntax:- 
+
+  () => { statements };
+
+  // function Expression... 
+
+  var myfun = function show() {
+    document.write("Geeky Shows");
+  };
+
+
+* If we write in Arrow Function than 
+
+var myfun = () => {document.write("GeekyShows");}
+
+
+note:- 
+
+
+      myfun3();
+      var myfun3 = () => {
+        document.write("Geeky Shows");
+      };
+      myfun3();
+
+If we call myfun3()  after a anonymous function 
+not a before because it would give error....
+
+
+*  Arrow function with Parameters....
+
+
+        // Arrow function with Parameters
+
+        var myfun = (a) => {
+            document.write(a);
+        }
+        myfun(10);
+
+Output:- 10
+
+
+
+        var myfun = a => {
+            document.write(a);
+        }
+        myfun(10);
+
+* If we have a single parameter than if we give a paranthesis or not it would not affect.... 
+
+
+
+var myfun = (a,b) => {
+  document.write(a+b);
+}
+myfun(10,20);
+
+* if we have more than one parameter than we need to add  a paranthesis....
+
+
+
+* Arrow function with default parameter & Rest parameters....
+
+
+Arrow Function with Default Parameters....
+
+
+      var myfun = (a, b = 20) => {
+        document.write(a + "" + b);
+      };
+      myfun(10);
+
+      Output:- 
+
+      1020
+
+
+Case 2:- 
+
+      var myfun = (a, b = 20) => {
+        document.write(a + "" + b);
+      };
+      myfun(10,40);
+
+      Output:- 
+      1040
+
+Note :- In JavaScript, if an argument is provided for a parameter with a default value, the provided argument overrides the default. 
+
+
+        // Arrow function with Rest Parameter
+
+        var myfun = (a,...args) => {
+            document.write(a+","+args);
+        }
+        myfun(10,20,30,40,50,60,70,80,90,100);
+
+
+        Output:- 
+        10,20,30,40,50,60,70,80,90,100
+
+
+      Basic Syntax:- 
+
+      * If there is only one parameter with one body statement then we can implement with a curly braces.... 
+
+
+        var myfun = a => document.write(a);
+        myfun(10);
+
+        Output:- 10
+
+
+        case 3:- 
+
+      var myfun = (a) => document.write(a + "<br/>");
+      document.write("Shows");
+
+      myfun(10);
+
+
+      * note:- If we use multiple body of statements than 
+        It should be writtern in a curly braces.... 
+
+
+ex:-  Different cases... 
+
+    // Function Expression.... 
+    var myfun1 = function show(a){
+        return a;
+    }
+
+    // Anonymous Function 
+    var myfun2 = function(b){
+        return b;
+    }
+
+    // Arrow Function 
+    var myfun = (c) => {return c;};
+
+
+
+
+ note :- we can more code code below by 
+    // Arrow Function 
+    var myfun = (c) => {return c;};
+
+
+    // shorter arrow function to return c;
+    var myfun = c => c;
+
+    => c;
+    means it automatically returns c in a arrow functions....
+
+
+// shorter syntax without a return in a  arrow functions 
+
+      var myfun = c => c;
+      var result = myfun(10);
+      document.write(result);
+
+
+    var myfunN = c => c;   // Right method.....
+    var myfunN = c => {c};   // wrong method (Output:- Undefined)
+    var myfunN = c => {return c};  // Right method....
+
+
+  
+    var myfunc = (a,b) => a+b;
+    document.write(myfunc(20,30));
+
+    Output:- 50
+
+
+* Immediately Invoked Function Expression (IIFE)
+
+* This is JavaScript function that runs as soon as it is defined....
+
+* It is a design pattern which is also known as Self-Executing Anonymous Function and contains two major 
+  parts. the first is the anonymous function with lexical scope enclosed within the Grouping Operator().
+  This prevents accessing variables within the IIFE idiom as well as polluting the global scope....
+  
+
+* The second part is creating the Immediately executing function expression (), through which the JavaScript engine will directly interpret the function....
+
+ex:- 
+
+(function() {document.write("GeekyShows");})();
+(function(a,b){document.write(a+" "+b);})(10,20);
+
+ * Avoid Creating Global variable and Functions....
+ * As it doesn't define variable and function globally so there will be no name conflicts....
+ * Scope is limited to that  particular function only....
+
+
+ ex:- 
+
+       // (function () {document.write("Hello")})();
+
+       Output:- Hello
+
+      // Another way to create an IIFE
+      // (
+      //     function (){
+      //         document.write("Hello");
+      //     }
+      // )();
+
+      output:- Hello
+
+      (function () {
+        var a=10;
+        document.write(a+"<br/>");
+      })();
+
+
+      output;- 10
+
+
+Note:- 
+
+
+      (function () {
+        var a=10;
+        document.write(a+"<br/>");
+      })();
+      document.write(a);
+
+      output:- 
+
+      10
+      not accesible value becuase outside a block...
+
+
+      The a value is not accessible outside becuase it is accessible in the local scope only....
+
+
+      * using a parameter....
+
+      (
+        function (a,b){
+            document.write("Add :-"+(a+b))
+        }
+      )(10,20)
+
+      Output:- 
+      30
+
+Note:- It is Self Executing Function which calls himself when it is defined...
+
+
+
+*  TypeOf Operator.... 
+
+   * The typeof operator is used to get the data type (returns a string) of its operand.
+     The operand can be either a liteal or a data structure such as a variable, a function , or an object....
+
+
+    Syntax:- 
+
+    typeof operand 
+    typeof(operand)
+
+
+    ex:- 
+
+    typeof 'a';
+
+
+
+    var a = 13;
+    document.write(typeof(a)+"<br/>");
+    document.write(typeof("Hello")+"<br/>");
+
+
+    Output:- 
+
+    number
+    string
+
+
+
+* undefined in JavaScript
+
+  * The undefined type is used for a variable or object properties that 
+    either do not exist or have not been assigned a value. The only value an undefined type can have is undefined....
+
+
+
+    var a;            // Not assigned a value - undefined
+    document.write(a);
+
+
+
+    ex:- 
+
+        // Undefined variables
+        var x;
+        document.write(x); // Output: undefined
+
+
+    ex 2.
+
+        // Undefined variables
+        var x;
+        document.write(x); // Output: undefined
+        document.write(y);
+
+        Output:- 
+
+        undefined 
+        Uncaught ReferenceError: y is not defined
+        at index.html:13:24
+
+
+
+* Null in JavaScript
+
+
+  * The null value indicates an empty value; it is essentially a placeholder 
+    that represents "nothing". The Null value is defined as an empty object so 
+    using typeof operator on a variable holding null shows its type to be object....
+
+
+ex:- 
+
+    var a = null;
+    document.write(a+"<br>");
+    document.write(typeof(a)+"<br/>");
+
+
+    Output:- 
+
+    null...
+    object...
+
+
+*  Difference Between Null and undefined....
+
+
+   * Undefined means the value hasn't been set, whereas null 
+    means the value has been set to be empty....
+
+
+
+* var let and const keyword....
+
+  * Variable Scope 
+
+    * var keyword....
+
+     * Which is either the enclosing function or , for variables declared 
+       outside any function,... global...
+
+    *  let keyword....
+
+     * let allows you to declare variables that are limited in scope to the block,
+       statement, or expression on which it is used....
+
+
+    * const keyword... 
+
+      * This declaration creates a constant whose scope can be either global or local 
+        to the block in which it is declared. 
+      
+      * Global constants do not become properties of the window object, unlike var 
+        variables... 
+
+      * An initializer for a constant is required; that is, we must specify its value 
+        in the same statement in which it's declared which can't be changed later... 
+
+
+      *  Examine var and let 
+
+        var a=10;
+        let b=20;
+
+        document.write(a+"<br/>");
+        document.write(b+"<br/>");
+
+        Output:- 
+        10
+        20
+
+        Note :- No Change Both of the values are accessible....
+        (IMP NOTE)
+        * Whenever we create a variable using a var it goes in the 
+          windows object property unlike let and const....
+
+
+        var a=10;
+        let b=20;
+        const c=30;
+
+        document.write(a+"<br/>");
+        document.write(b+"<br/>");
+        document.write(c+"<br/>");
+
+        Output:- 
+        10
+        20
+        30
+
+
+        * To Check which variable from above goes into a window object property 
+          go in dev tools in console ----> window (type input)....
+
+
+        Note :- 
+
+        * So there is a good practice that we should create our variable with the 
+          help of var , const.... 
+
+
+        function myvar(){
+            var a=20;
+            if(true){
+                var a=40;
+                document.write(a+"<br/>");
+            }
+        }
+        myvar();
+
+
+        Output:- 40
+
+        * Because the new value 40 overrides the previous value....
+
+
+
+        function myvar(){
+            var a=20;
+            if(true){
+                var a=40;
+                document.write(a+"<br/>");
+            }
+            document.write(a+"<br/>");
+        }
+        myvar();
+
+
+        Output:- 
+        40
+        40
+
+
+        function mylet(){
+            let a=10;
+            if(true){
+                let a=20;
+                document.write(a+"<br/>");
+            }
+            document.write(a+"<br/>");
+        }
+        mylet();
+
+
+        // Output:- 
+        // 20
+        // 10
+
+
+
+
+        for(var i=0;i<=5;i++){
+            document.write(i+"<br/>");
+        }
+        document.write(i+"<br/>");
+
+
+        Output:- 
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+
+        Note:- Due to var keyword it is become global and we are getting +1 increased value
+        which is not good... 
+
+
+        for(let i=0;i<5;i++){
+            document.write(i+"<br/>");
+        }
+        document.write(i+"<br/>");
+
+        Output:- 
+        0
+        1
+        2
+        3
+        4
+
+
+       for outer document.write();
+
+       Error:- 
+
+       Uncaught ReferenceError: i is not defined
+       at index.html:76:24
+
+
+
+************************************************************
+
+* Object Oriented Programming....
+
+  * Object-oriented programming (OOP) is a programming language model organized around 
+    objects rather than "actions" and data rather than logic...
+
+
+  * Pillers of Object Oriented Programming....
+
+    * Encapsulation.... 
+    * Abstraction...
+    * Inheritance... 
+    * Polymorphism...
+
+
+    * Encapsulation 
+
+    * Encapsulation is a key concept in object-oriented programming (OOP) that restricts direct access to certain components of an object. It's a way to store, hide, and manipulate data while giving the user more control over it.
+
+
+    * Abstraction.... 
+
+    * Abstraction in object-oriented programming (OOP) is the process of hiding unnecessary details of an object or application, and only displaying the relevant information.
+
+    * Inheritance...
+
+    * Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to inherit properties and behaviors from another class....
+
+
+    * Polymorphism
+
+    * Polymorphism is a core concept in object-oriented programming (OOP) that allows objects of different types to be treated as objects of a common superclass.
+
+    * Polymorphism is a feature of object-oriented programming languages that allows a specific routine to use variables of different types at different times. 
+
+
+    * Object Litrals....
+
+      * Objects... 
+
+        * An Object is a Collection of Properties, and a property is an association
+          between a name (or key) and a value.... A property's value can be function,
+          in which case the property is known as a method...
+          In addition to objects that are predefined in the browser, you can define your own objects...
+
+
+          ex:- 
+
+          var fees = {
+
+            Rahul: 100,
+            Sumit: 200,
+            Rohan: 300,
+            total: function () {return(100+200+300);}
+          }
+
+
+          * First Three are Properties and last one is method...
+
+
+
+
+     // Object 
+      var fees = {
+        Rahul: 100,
+        Sumit: 200,
+        Rohan: 300,
+        total: function () {
+          return 100 + 200 + 300;
+        },
+      };
+
+      // Accessing Object Properties...
+      document.write(fees.Rahul + "<br/>");
+      document.write(fees.Sumit + "<br/>");
+      document.write(fees.Rohan + "<br/>");
+      document.write(fees.total+"<br/>"); // accessing a function...
+
+      document.write(fees.total()+"<br/>"); // accessing the function body code that is being executed...
+
+      document.write(fees); // Acessing a Object...
+      document.write(typeof(fees));
+
+
+
+      Output:- 
+
+      100
+      200
+      300
+      function () { return 100 + 200 + 300; }
+      600
+      [object Object]object
+
+
+  * Type of Objects... 
+
+    *  User-defined Objects :- These are custom objects created by the programmer to bring  structure and consistency to a particular programming task... 
+
+    
+    * Native Objects:- These are provided by the JavaScript language itself like String,
+      Number, Boolean, Function, Date, Object, Array, Math, RegExp, Error as well as 
+      Object that allow creation of user-defined objects and composite types... 
+
+    * host Objects:- These Objects are not specified as part of the JavaScript language
+      but that are supported by most host environments, typically browsers like window,
+      navigator... 
+
+    * Document Objects:- These are part of the Document Object model (DOM), as defined by the W3C. These objects presents present the programmer with strucutured interface to html and xml document...
+
+
+    * Access to the document objects is provided by the browser via the document property of the window object (window.document).....
+
+
+* Declaration  and initialization of Object....
+
+  * Using Object Literal....
+
+    * Syntax:- var object_name = { };
+
+
+    * var fees = {};
+    fees['Rahul'] = 100;  ---> We can write in this way also fees.Rahul = 100;
+    fees['Sumit'] = 200;
+    fees['Rohan'] = 300;
+
+
+
+
+      // First Way to Declare and Initialize Object....
+
+      var fees = {};
+      fees.Rahul = 200;
+      fees.Rohan = 200;
+      fees.Rakesh = 200;
+      fees.total = function () {
+        return fees.Rahul + fees.Rohan + fees.Rakesh;
+      };
+
+      document.write(fees.total());
+
+
+      output:- 600
+
+
+      // Second Way to Declare and Initialize Object
+
+      var fees = {};
+
+      fees['Rahul Sir']=100;   -----> We can write in this way also fees.Rahul Sir = 100;
+      fees['Rohan Sir']=500;
+      fees['Rakesh Sir']=300;
+      fees['total'] = function () {
+        return fees['Rahul Sir'] + fees['Rohan Sir'] + fees['Rakesh Sir'];
+      };
+
+      document.write(fees.total());
+
+      Output:- 900
+
+
+      Note :- If we want to write a multiple words in one key....
+      then we can use above syntax....
+
+      * Multiword key required quotation....
+
+
+
+    var fees = {};
+
+    fees['Rahul Sir']=100;
+    fees['Rohan Sir']=500;
+    fees['Rakesh Sir']=300;
+    fees['total'] = function () {
+      return (100+200+900);
+    };
+
+    document.write(fees.total());
+
+
+    Output:- 1200
+
+
+
+    * We Can Assign the Function Like this also...
+
+
+    function sum(){
+        return (100+200+300+800);
+    }
+
+    var fees = {};
+
+    fees.total = sum;  // assign function sum to a total key...
+
+    document.write(fees.total());
+
+    Output:- 1400
+
+
+    // Different Case how to access a total 
+
+
+    
+    function sum(){
+        return (100+200+300+800);
+    }
+
+    var fees = {};
+
+    fees['total'] = sum;
+
+    document.write(fees['total']());
+
+    Output:- 1400
+
+
+
+    * Using Object Literal 
+
+    Syntax:- var object_name = {key1:value1, key2:value2, key_n:value_n};
+
+    ex:- 
+
+    var fees = {Rahul:100, Sumit:200,Rohan:300};
+
+
+
+ 
+    let fees = {
+        Rahul:100,
+        "Atharva Deshmukh":200,
+        Rakesh:300,
+        total: function() {
+            return this.Rahul + fees["Atharva Deshmukh"] + this.Rakesh;
+        }
+    }
+
+    // document.write(fees.total());
+    document.write(fees["Atharva Deshmukh"]);
+
+    Output:- 
+    200
+
+
+    * Note :- How to Access a Double quotation value....
+
+
+
+
+  * Declaration and initialization of Object using a Constructor....
+
+    * Using a Object Constructor....
+
+      Syntax:- var object_name = new Object();
+
+      Where new  is a Keyword and Object();  is a Constructor...
+
+
+      * This Object(); use to create a Reference which is assigned to the given variable....
+
+       ex:- var fees = new Object();
+
+
+
+    ex:- 
+
+        let obj = new Object();
+        obj.name = "Johan sharma";
+        obj.age = 30;
+        obj.gender = "Male";
+        console.log(obj);
+
+    ex2:-
+    
+      let obj = new Object();
+      obj["Rahul"] = 100;
+      obj["Rohit"] = 200;
+      obj["Rohan"] = 300;
+      console.log(obj);
+
+
+*  Accessing Properties in Object Constructor....
+
+  * A Property of an object is some piece of named data it contains. These are accessed with dot operator applied to an object 
+    alternative to the dot operator is the array[] operator....
+
+    Syntax:- object_name.property_name
+
+    ex:- 
+    var fees = {Rahul: 100, Summit:200, Rohan;300};
+
+    fees['Rahul']=100; or fees.Rahul = 100;
+
+
+    // Accessing Properties in Object Constructor....
+
+
+    document.write(fees['Rahul']);
+    document.write(fees.Rahul);
+
+
+    ex:- 
+
+        var fees = {Rahul:100, Sumit:200, Rohan:300,"Super Man":400};
+
+        console.log(fees);
+
+        Output:- 
+        Object....
+
+
+  // Accessing Methods... 
+
+  * Object members that are functions are called methods... These are accessed with dot operator applied to an object alternative 
+    to the dot operator is the array [] operator....
+
+
+    Syntax:- 
+
+    object_name.Method_name();
+
+
+    ex:-
+
+      let fees ={
+        Rahul:100,
+        Sumit:200,
+        Rohan:300,
+        total:function(){
+            return (100+200+300);
+        }
+      }
+
+      console.log(fees.total());
+
+
+      Output:-
+
+      600
+      Object....
+
+
+* Adding Object Properties and Methods in JavaScript...
+
+  Syntax:- 
+
+  Object_name.Property_name = value;
+
+  Object_name['Property_name'] = value;
+
+
+  ex:- 
+
+  fees.Sonam = 600;
+  fees['Sonam'] = 600;
+
+
+
+ex:- 
+
+        let fees = {Rahul:400, Sumit:200};
+        console.log(fees.Rahul+" "+fees.Sumit);
+
+        Output:- 100 200
+
+
+        let fees = {Rahul:400, Sumit:200};
+        console.log(fees.Rahul+" "+fees.Sumit);
+        fees.Rohit=500;  // Value Assigning in the Dynamic Way...
+        console.log(fees.Rahul+" "+fees.Sumit+" "+fees.Rohit);
+
+        Output:- 
+        400 200 500
+
+
+*  Deleting Objects in Object
+
+   * Delete operator is used to delete instance properties...
+
+   Syntax:- 
+
+   delete object_name.property_name
+
+
+   Note:- 
+
+   * After Removal with delete operator, the property has the undefined 
+     value...
+
+
+        let fees ={
+            Rahul:100,
+            Rohit:200,
+            Atharva:300
+        };
+        console.log(fees.Rahul);          // Output:- 100
+        console.log(delete fees.Atharva); // Output:- true
+        console.log(fees.Atharva);   // Output:- undefined
+        console.log(fees);  // Output:- object {Rahul:100, Rohit:200}
+
+
+
+  * Factory Functions in JavaScript...
+
+     * When a function returns an object, we call it a factory function. 
+     It can produce object instance without new keyword or classes....
+
+     ex:- 
+
+
+             function mobile(){
+            return{
+                Rahul:100,
+                price:function(){
+                    return ("Price: Rs 30000");
+                }
+            }
+        }
+
+
+   ex:- 
+
+         function mobile() {
+        return {
+          Rahul: 100,
+          price: function () {
+            return "Price: Rs 30000";
+          },
+        };
+      }
+      let result = mobile();
+      let lg=mobile();          // all the values will be accessible for a lg variable also
+      console.log(result);
+      console.log(result.Rahul);
+      console.log(result.price);
+      console.log(result.price());
+
+
+      Output:- 
+
+      Object 
+      100
+      function 
+      price Rs 30000
+
+
+
+    *  Factory Functions with Parameters....
+
+
+    Syntax:-
+
+    function mobile(model_no) {
+       return{
+          model:model_no,
+          price:function(){
+            return ("price is Rs 3000");
+          }
+       }
+    }
+
+    var samsung = mobile('galaxy');
+    var nokia = mobile('3310');
+
+
+
+
+
+ex:- 
+
+        function mobile(mobile_no) {
+        return {
+          Rahul: mobile_no,
+          price: function () {
+            return "Price: Rs 30000";
+          },
+        };
+      }
+
+      var samsung = mobile();
+      console.log(samsung);
+      console.log(samsung.Rahul);
+      console.log(samsung.price);
+      console.log(samsung.price());
+
+
+
+      var lg = mobile(9860866769);
+      console.log(lg);
+      console.log(lg.Rahul);
+      console.log(lg.price);
+      console.log(lg.price());
+
+
+Output:- 
+
+Object 
+undefined 
+function 
+price is rs 3000
+
+
+Object 
+9860866769
+function 
+price is rs 3000
+
+
+
+
+*  Prototype Object 
+
+
+ 
+   * Every object is associated with another Object in JavaScript....
+
+   ex:- 
+
+   var b = {};
+
+
+
+   Object                 A Properties   (A is prototype of Object B)
+
+   Object                 B Properties   (B will inherit All properties of prototype Object A)...
+
+
+*  Every object is associated with another Object in JavaScript....
+
+
+Object         B        ------> Object prototype Properties....  (Object)....
+           Properties
+
+Note :- 
+
+     * Object.prototype is a prototype Object of Object B...
+     * B will inherit all the properties of Object.prototype....
+
+  
+  *  Note :- Prototype Object of Object.prototype is null....
+
+
+
+  * Every object is associated with another Object in JavaScript....
+
+    var b1 = new Object();    -----> Object(); -----> Construtor Function....  Created a B1 Properties ----> (Object).....
+
+    B1 Properties  ----> Object.prototype Properties....
+
+
+* Object.prototype Properties ---> Prototype property of the Constructor Function which in this case 'Object.prototype' is prototype 
+                                   Object of Object B1.....
+
+
+
+* Every object is associated with another Object in JavaScript...
+
+  var b2 = new Array();
+
+  * Where Array();  ---. Array.prototype Properties....
+  * Where Array(); is a Constructor....
+
+
+  Object            Object.prototype 
+                      |
+                      |
+
+  Object            Array.prototype     ----> Prototype property of the Constructor Function which is in this case 'Array.prototype' is prototype Object of Object B2...
+                      Properties 
+
+                      |
+                      |
+
+  Object            B2 
+                Properties....
+
+
+  Note :-  Prototype Object of Array.prototype is Object.prototype and Prototype Object of Object.prototype is null....
+
+  *  B2 Properties can Inherit the Properties of the Array.prototype aswell as Object.prototype also....
+
+
+
+*  Another Example :- 
+
+
+* If Object Created of a 
+
+ * var b2 = new String();
+
+* Note :- Prototype property of the Constructor Function which is in this case 'String.prototype' is prototype Object of Object B2...
+          
+          * Same with 
+            
+              * Prototype Object of Array.prototype is Object.prototype and Prototype Object.prototype is null....
+
+
+
+Object        Object.Prototype
+                    |
+                    |
+Object        String.prototype
+                Properties  
+                    |
+                    |
+Object             B2 
+                Properties
+
+
+*  B2 Properties can Inherit the Properties of the String.Prototype Properties aswell as Object.Prototype.....
+
+
+
+*  Different Methods....
+
+   1. Prototype Object....
+
+
+
+   * Every object is associated with another Object in JavaScript.....
+
+   var b = {};
+
+
+   Object          Object.prototype            Object.prototype is a prototype Object of Object B 
+                     Properties
+
+
+  Object                B                     B will inherit All properties of Object.prototype 
+                    Properties 
+
+
+  Note :- Prototype Object of Object.prototype is null.....
+
+
+Code :- 
+
+
+    // It will return Object.prototype....
+    // console.log(Object.prototype);
+
+    Output:- object....
+
+    var b = {};
+    console.log(Object.getPrototypeOf(b));
+    console.log(Object.getPrototypeOf(Object.prototype));
+
+    Output:- 
+    
+    object
+    null
+
+
+      var b1 = new Object();
+      console.log(Object.getPrototypeOf(b1));
+      // Output:-   Object
+      console.log(Object.getPrototypeOf(Object.prototype));
+      // Output :- null
+
+
+
+      // Array .....
+
+      var b2 = new Array();
+      console.log(Object.getPrototypeOf(b2));
+
+      // Output:- Array
+      console.log(Array.prototype);
+
+      // Output ;- Array
+
+
+
+      // String 
+
+      var b2 = new String();
+      console.log(Object.getPrototypeOf(b2));
+      // Output :- String
+      console.log(Object.getPrototypeOf(String.prototype));
+      // Output :- Object
+      console.log(Object.getPrototypeOf(Object.prototype));
+      //Output :- null
+
+
+
+*  How the Prototype is Working in JavaScript.....
+
+   * When we Create a Function....
+
+   function Mobile(){
+     -------------------------
+   }                          |
+                              |
+   ------------------------------                           --------------------------------------
+   |   Function                 | Function                  | Prototype ------------------------|-----------> Prototype Object....
+   |                            | Function                  |                                   |
+   |                            | Function |                |                                   |
+   |      Prototype ------------|-------------------->      |                                   |
+   |        |                   |                           |                                   |
+   |        |                   | Function                  |                                   |
+ -------------------------------                            --------------------------------------
+           |                                                                              |
+           prototype is the property of function which points to the prototype object..   |
+           Prototype object can be accessed using Function_name.prototype.....            |
+                                                                                          |
+                                                                                          |
+                                                                                          |
+var lg = new Mobile();                                                                    |
+var g = new Mobile(); |                                                                   |
+                                                                                          |
+                                                                                          |
+------------------------------------                                                      |
+|                                   |                                                     |
+|                                   | -------------------------------------------------------
+|          Object                   |
+|                                   |
+|                                   |
+|                                   |
+|                                   |
+|                   __proto__       |
+------------------------------------
+                        |
+                        |
+                        |
+                        |
+                        When you create a new Object of that Function using a new keyword JS Engine 
+                        Creates an Object and sets a property named __proto__ which points to its function's 
+                        prototype object.....
+
+
+Code :-
+
+
+      function Mobile() {
+        // Code Implementation
+      }
+
+      var lg = new Mobile();
+
+      console.log(lg.__proto__);
+
+      Output:- 
+
+      Object
+
+
+* Note :- When we create a function  in background it creates a  prototype object and has a prototype property....
+
+
+      console.log(lg.a)
+      Output:- Undefined
+
+      Note :- As It Search for the a property which is not present anywhere so the output 
+              will be undefined....
+
+code :- 
+
+      function Mobile(){
+        this.a =10;
+      }
+
+      var lg=new Mobile();
+
+      console.log(lg.a);
+
+      Output:- 10
+
+
+Note:- While Searching for a it doesnot go directly towards Prototype Firstly It go towards the Object 
+       If It is present or not....
+
+
+*  Another Example :- 
+
+*  Using a Prototype
+
+      function Mobile(){
+
+      }
+      Mobile.prototype.a=20;
+      var lg = new Mobile();
+      console.log(lg.a)
+
+      Output:- 20
+
+* In this case the a value is not present in the object It is Present in the Prototype
+  So Js Engine  Searching the value a it goes towards Object  and then it goes towards the Prototype.....
+
+
+      function Mobile() {}
+      Mobile.prototype.a = 20;
+      var lg = new Mobile();
+      console.log(lg.a);
+      console.log(lg.__proto__.a);
+
+      Output:-
+      20
+      20
+
+
+* In this Case the value is present in the both object & prototype....
+  So Js Engine Searching the value a it goes towards Object and will not 
+  go towards the prototype.....
+
+      function Mobile() {
+        this.a = 20;
+      }
+      Mobile.prototype.a = 20;
+      var lg = new Mobile();
+
+      console.log(lg.a);
+
+      Output:- 20
+
+
+*    Code 
+
+      function Mobile() {}
+      console.log(Mobile.prototype);
+
+      var lg = new Mobile();
+      console.log(lg.__proto__ == Mobile.prototype);     // true
+      console.log(Mobile == lg.__proto__.constructor);  // true
+
+      Output:- true 
+      true
+
+
+*   Prototype Inheritance....
+
+
+Code :- 
+
+* Inheritance using a call method.....
+
+        function Mobile(){
+            this.amount = 100;
+        }
+
+        var lg=new Mobile();
+
+        function Samsung(){
+            Mobile.call(this);
+            this.model = "Galaxy S21";
+        }
+
+        var s=new Samsung();
+
+        console.log(s.model);
+        console.log(s.amount);
+
+Output:- 
+Galaxy S21
+100
+
+
+
+* Note :- InHeritance JavaScript class , function is not being 
+          Inherited the prototype is being inherited.
+
+
+
+
+
+*  Super Class & Sub Class in JavaScript.....
+
+
+      // Super Class
+
+      var Mobile = function () {};
+
+      // Prototype Method....
+      Mobile.prototype.getModel = function () {
+        return this.model;
+      };
+
+      // Sub Class
+      var Samsung = function (model, price) {
+        this.model = model;
+        this.price = price;
+      };
+
+      // Sub Class
+      var Lenovo = function (model) {
+        this.model = model;
+      };
+
+      // Inheritance.....
+      Samsung.prototype = Object.create(Mobile.prototype);
+
+      // To reset a Constructor....
+
+      Samsung.prototype.construtor = Samsung;
+
+      // Inheritance.....
+      Lenovo.prototype = Object.create(Mobile.prototype);
+      // To Reset a Construtor....
+
+      Lenovo.prototype.construtor = Lenovo;
+
+      // Object Creation
+      var Galaxy = new Samsung("Galaxy", 6000);
+      console.log(Galaxy);
+      console.log(Galaxy.model);
+      console.log(Galaxy.price);
+      console.log(Galaxy.getModel());
+
+      // Note :- It is Present Only in the Samsung prototype Object only.....
+
+      Samsung.prototype.getprice = function(){
+        return this.price;
+      }
+
+      var phab2 = new Lenovo("IPhone Model");
+      console.log(phab2);
+
+      console.log(Galaxy.getprice());
+
+
+      Output:-
+
+      Object
+      Galaxy
+      6000
+      Galaxy
+      IPhone Model 
+      6000
+      
+
+
+// Created a Common Method for a Inheritance....
+
+
+ // Function for Inheritance....
+ 
+ function extend(child, parent){
+    child.prototype = Object.create(parent.prototype);
+    child.prototype.construtor = child;
+ }
+// Super Class
+
+var Mobile = function () {};
+
+// Prototype Method....
+Mobile.prototype.getModel = function () {
+  return this.model;
+};
+
+// Sub Class
+var Samsung = function (model, price) {
+  this.model = model;
+  this.price = price;
+};
+
+// Sub Class
+var Lenovo = function (model) {
+  this.model = model;
+};
+
+
+// Inheritance 
+
+extend(Samsung, Mobile);
+extend(Lenovo, Mobile);
+
+
+// Object Creation
+var Galaxy = new Samsung("Galaxy", 6000);
+console.log(Galaxy);
+console.log(Galaxy.model);
+console.log(Galaxy.price);
+console.log(Galaxy.getModel());
+
+// Note :- It is Present Only in the Samsung prototype Object only.....
+
+Samsung.prototype.getprice = function(){
+  return this.price;
+}
+
+var phab2 = new Lenovo("IPhone Model");
+console.log(phab2);
+
+console.log(Galaxy.getprice());
+
+Output:-
+Samsung Object 
+Galaxy
+6000
+Galaxy
+Lenovo Object 
+6000
+
+
+
+
+* Method Overriding....
+
+    * Same Function Name With Different Implementation....
+    
+
+
+     function extend(Child, Parent) {
+        Child.prototype = Object.create(Parent.prototype);
+        Child.prototype.constructor = Child;
+      }
+
+      // Super Class
+      var Mobile = function () {};
+
+      // Prototype Member
+      Mobile.prototype.show = function () {
+        return "Super Class Method";
+      };
+
+      // Sub Class
+      var Samsung = function () {};
+
+      // sub class Samsung extending Super Class Mobile
+
+      extend(Samsung, Mobile);
+
+      Samsung.prototype.show = function () {
+        return "Sub Class Method";
+      };
+
+      // Creating Object of sub class Samsung
+
+      var sam = new Samsung();
+      var mob = new Mobile();
+
+      // Accessing super class propery model.....
+      // using sub class object....
+      console.log(sam.show());
+      console.log(mob.show());
+
+
+
+      Output:-
+
+      Sub Class Method
+      Super Class Method 
+
+

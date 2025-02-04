@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter</title>
+</head>
+<body>
+    <script>
+// function add(a,b,c=null)
+// {
+//    document.write("A= "+a+"<br/>");
+//    document.write("B= "+b+"<br/>");
+//    document.write("C= "+c+"<br/>");
+// }
+//         add(10,20);
+
+function add(a=[101]){
+    document.write("A= "+a[0]+"<br>");
+}
+
+add([10]);
+add();
+    </script>
+</body>
+</html>

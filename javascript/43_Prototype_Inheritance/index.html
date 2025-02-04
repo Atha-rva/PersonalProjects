@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Inheritance</title>
+  </head>
+  <body>
+    <script>
+      function Mobile() {
+        this.amount = 100;
+      }
+      Mobile.prototype.z = 30;
+
+      var lg = new Mobile();
+
+      function Samsung() {
+        Mobile.call(this);
+        this.model = "Galaxy S21";
+      }
+
+      var s = new Samsung();
+
+      console.log(s.model);
+      console.log(s.amount);
+      Samsung.prototype = Object.create(Mobile.prototype);
+
+      console.log(s.z);
+    </script>
+  </body>
+</html>

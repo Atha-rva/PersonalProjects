@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Object</title>
+  </head>
+  <body>
+    <script>
+      // It will return Object.prototype....
+      // console.log(Object.prototype);
+
+      //   var b = {};
+      //   console.log(Object.getPrototypeOf(b));
+      //   console.log(Object.getPrototypeOf(Object.prototype));
+
+      //   var b1 = new Object();
+      //   console.log(Object.getPrototypeOf(b1));
+      // Output:-   Object
+      //   console.log(Object.getPrototypeOf(Object.prototype));
+      // Output :- null
+
+      // Array .....
+
+      //   var b2 = new Array();
+      //   console.log(Object.getPrototypeOf(b2));
+
+      //   // Output:- Array
+      //   console.log(Array.prototype);
+
+      //   // Output ;- Array
+
+      var b2 = new String();
+      console.log(Object.getPrototypeOf(b2));
+      // Output :- String
+      console.log(Object.getPrototypeOf(String.prototype));
+      // Output :- Object
+      console.log(Object.getPrototypeOf(Object.prototype));
+      //Output :- null
+    </script>
+  </body>
+</html>

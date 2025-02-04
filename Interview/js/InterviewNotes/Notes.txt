@@ -1,0 +1,112 @@
+# Javascript 
+
+{
+1. Variables 
+
+    * It is name of a memory location. 
+    * A variable is an identifer or a name which is used to refer a value. 
+    * Can be writtern in combination of letters and numbers , _ , $ with the first letter being an alphabet. 
+
+
+    Ex:- c , fact , b33 , total_amount 
+
+    Limitations:- 
+
+    * Must begin with an alphabet.
+    * Must not contain any space characters. 
+    * Javascript is a case sensitive languages. 
+    * Can't use reserved keywords.  (Imp). 
+}
+
+{
+2. Datatypes 
+
+   * In Javascript we do not need to specify type of the variable because it is dynamically used by 
+     Javascript engine. (IMP).
+
+   * We can use (var) data type. It can hold any type of data like String, Number, Boolean etc. 
+
+
+  (Primitive Datatypes)     (Non Primitive Datatypes)
+
+   * String                 * Object
+   * Number                 * Array 
+   * Boolean                * RegExp 
+   * Undefined 
+   * Null 
+}
+
+
+{
+3. Declaring & Initializing a variable
+
+  * Declaring a variable 
+
+    * var roll;
+    * var name;
+    * var price;
+
+
+  * Intializing a Variable 
+
+  (Declaring &                              (Declaring & Initializing a variable on Same Line)                (var is optional)
+  Initializing a variable on 
+  different line)
+
+  * var roll;                               * var roll = 101;                                                  roll = 101;
+    roll = 101;                             * var name = "geeky shows";                                        name = "geeky shows";
+                                            * var price = 125.36;                                              price = 125.36;
+  * var name;                          
+    name = 'Geeky Shows';
+
+  * var price;
+    price = 125.36;
+
+
+  Note :- But To Identify We Should a var , let keyword before declaring and Initalizing a variable (Good Practice)
+      
+  *  Strings are written inside double or single qoutes... 
+
+  *  Boolean value
+
+    var ans = true;
+    var result = false;
+
+
+  * We can intialize a multiple variables in a single line also... 
+
+  var a=20, b=10, c=30;
+  var a="Atharva", b=20, c=50.25;
+
+
+  * Redeclaring a variables.... 
+
+  * If you re-declare a Javascript variable, it will not lose its value.... 
+
+  ex :- 
+
+  var name = "Atharva Deelip Deshmukh";
+  var name;
+  console.log(name);
+
+
+  // Output :- Atharva Deelip Deshmukh
+
+
+
+  * Note :- The Statements are executed , one by one, in the same order as they are written.... 
+  * Javascript ignores multiple spaces... 
+  * use line Break... 
+
+
+  note :- 
+
+  var wifi = "JIO";
+  var wifi = "vodaphone";
+  console.log(wifi);
+
+  output :- vodaphone
+  // the variable wifi replaces the old value with the new value 
+}
+
+

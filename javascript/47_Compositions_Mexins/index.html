@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compositions and Mixins</title>
+  </head>
+  <body>
+    <script>
+      // Function for Inheritance
+
+      function extend(Child, Parent) {
+        Child.prototype = Object.create(Parent.prototype);
+        Child.prototype.constructor = Child;
+      }
+
+      // Super Class
+      var Human = function () {};
+
+      // Prototype Member
+      Mobile.prototype.eat = function () {
+        return "Super Class eat Method";
+      };
+      Mobile.prototype.walk = function () {
+        return "Super Class walk Method";
+      };
+      Mobile.prototype.talk = function () {
+        return "Super Class talk  Method2";
+      };
+
+      // Sub Class 
+      var Animal = function(){
+
+      }
+
+      // sub class Animal extending super class Human
+
+
+      function Robot = function(){
+        
+      }
+
+    </script>
+  </body>
+</html>

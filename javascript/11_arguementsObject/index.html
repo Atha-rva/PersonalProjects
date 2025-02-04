@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function display(name1, name2) {
+      //     document.write(arguments[0] + arguments[1]);
+      //   }
+      //   display(10, 20);
+
+      //   function display(num1, num2) {
+      //     arguments[0] = 40;
+      //     document.write(arguments[0] + arguments[1]);
+      //   }
+      //   display(10, 40);
+
+      // function display(name1,name2){
+      //     arguments[0]="Atharva";
+      //     document.write(name1+" "+name2);
+      // };
+      // display("Johan","Deshmukh");
+
+      // function display(name1,name2){
+      //     document.write(arguments[0].length);
+      // }
+      // display("Atharva","Deshmukh");
+
+      // function display(){
+      //     for(var i=0; i<arguments.length;i++){
+      //         document.write(arguments[i]+" ");
+      //     }
+      // }
+      // display(10, 20, 30, 40, 50);
+
+      function display() {
+        document.write(arguments.callee);
+      }
+      display(10, 20, 30, 40, 50);
+    </script>
+  </body>
+</html>

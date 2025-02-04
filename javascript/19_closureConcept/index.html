@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure Concept in Javascript</title>
+  </head>
+  <body>
+    <script>
+      // var i=10;
+      // function show(){
+      //     var j=20;
+      //     document.write(j+"<br/>");
+      //     document.write(i+"<br/>");
+      // }
+      // show();
+
+      function show() {
+        var j = "J a Local variable of outer Function";
+        document.write(j + "<br/>");
+        function innerFun() {
+          var k = "K is a Local Variable of inner function";
+          document.write(k + "<br/>");
+          document.write(j + "<br/>");
+        }
+        innerFun();
+        document.write(k + "<br/>"); //unable to access the variable outer side a inner function.....
+      }
+      show();
+    </script>
+  </body>
+</html>

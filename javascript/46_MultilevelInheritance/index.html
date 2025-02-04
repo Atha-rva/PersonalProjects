@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Level Inheritance....</title>
+  </head>
+  <body>
+    <script>
+      // Super Class
+      var Mobile = function () {
+        this.a = 10;
+      };
+
+      // Prototype Property of Mobile
+      Mobile.prototype.z = 30;
+
+      // Sub Class
+
+      // It Calls Super Class Construtor and initialize property
+      // without this you can not access super class property
+      // using sub class object....
+
+      var Samsung = function () {
+        Mobile.call(this);
+        this.b = 20;
+      };
+
+      // Child class of Samsung
+
+      var Galaxy = function () {
+        Samsung.call(this);
+        this.c = 100;
+      };
+
+      // Prototype Inheritance
+      Samsung.prototype = Object.create(Mobile.prototype);
+      Samsung.prototype.constructor = Samsung;
+
+      Galaxy.prototype = Object.create(Samsung.prototype);
+      Galaxy.prototype.constructor = Galaxy;
+
+      var m = new Mobile();
+      var s = new Samsung();
+      var g = new Galaxy();
+
+      document.write("Galaxy Object can access <br>");
+      document.write("Mobile A: " + g.a + "<br>");
+      document.write("Samsung B: " + g.b + "<br>");
+      document.write("Mobile Prototype Z:" + g.z + "<br>");
+
+      document.write("Samsung Object can access <br>");
+      document.write("Mobile A: " + s.a + "<br>");
+      document.write("Samsung B: " + s.b + "<br>");
+      document.write("Mobile Prototype Z:" + s.z + "<br>");
+    </script>
+  </body>
+</html>

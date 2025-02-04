@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.wrap {
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #4d6aff, #00ffaa, #cf49ff, #00f0ff);
+  background-size: 400% 400%;
+  animation: gradient 40s ease infinite;
+}
+
+canvas {
+position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* 
+<ZLogo
+src={dataSectionImage}
+alt="Vertical Line"
+className={style.DatasectionImg}
+/> */

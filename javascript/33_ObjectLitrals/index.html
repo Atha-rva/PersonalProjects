@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Litrals....</title>
+  </head>
+  <body>
+    <script>
+      // Object
+      var fees = {
+        Rahul: 100,
+        Sumit: 200,
+        Rohan: 300,
+        total: function () {
+          return 100 + 200 + 300;
+        },
+      };
+
+      // Accessing Object Properties...
+      document.write(fees.Rahul + "<br/>");
+      document.write(fees.Sumit + "<br/>");
+      document.write(fees.Rohan + "<br/>");
+      document.write(fees.total + "<br/>"); // accessing a function...
+
+      document.write(fees.total() + "<br/>"); // accessing the function body code that is being executed...
+
+      document.write(fees); // Acessing a Object...
+      document.write(typeof fees);
+    </script>
+  </body>
+</html>

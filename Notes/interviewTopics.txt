@@ -1,0 +1,122 @@
+Basics of Javascript 
+
+* working of var , let , const
+* Primitive Datatypes 
+* Some Methods of a String... 
+* Conditionals 
+* Loops 
+* for each loop (Important)
+
+
+* event handling 
+* Arrow Functions  vs functions 
+* Functions
+* How this keyword works in the arrow functions... 
+  (Lexical this)           
+
+  * events 
+  * handling events 
+  * How Lexical this works...
+  * Normal functions
+ 
+  * Spread Operator 
+  * Destructring  
+  * Props Concept 
+
+* Named Imports 
+* Default Imports 
+* How we can import javascript objects from one module to another module 
+
+
+* Callbacks in Javascript 
+* Promisies
+* async / await in javascript
+* map , filter and reduce method in a javascript
+
+
+
+
+
+
+* Basics of Javascript
+
+1.  let , var , const (Working on a variables)
+2.  Hositing a variables 
+3.  functions in JS 
+    
+	* Arrow functions 
+	* Higher order functions 
+4.  Arrays and Objects 
+
+	* Array Destructring 
+	* Object Destructuring 
+	* rest operator 
+	* spread operator 
+	
+	* How destructring works (ES6 Concept)
+	
+	* if else and conditionals
+	
+* Conditionals in Javascript
+	
+	* if else 
+	* ternary operator 
+	* using && and || and !
+	* Optional Chaining 
+	
+*  Array Methods 
+
+   * map() 
+   * filter()
+   * reduce()
+   * sort()
+   
+
+*  Event Listeners 
+
+   * onClick 
+   * onBlur 
+   * onChange 
+   * onFocus
+   *  setTimeout() & setInterval()
+   * onMouseUpEvent 
+   * onKeydown Event 
+   
+* Event Bubbling & Capturing (Important)....
+
+
+* Aynchronous Events 
+
+	* Callbacks
+	* Callbacks Hell 
+	* Promisies       (IMP)
+	* Promise APIs   (IMP)
+	
+* Async & await function..... 
+
+* Expentional Handling (Try & Catch) 
+
+
+
+
+
+*  Important  Topics in ReactJS Interview Q    
+
+
+*  Code Splitting  (Important Topics)
+*  Redux and State Management
+*  API Calling 
+   (Fetch , ReactQuery , Axios)
+*  Optimization 
+   (usecallback , usememo , Memoization).... 
+*  Throting & Debouncing 
+*  Unit Testing 
+*  Jest 
+
+*  Hooks 
+   Class Component ----> Functional Based Components 
+   
+   * useState , useEffect , useMemo , useContext , useCallBack 
+   
+*  Virtual DOM , JSX 
+*  Context API (Props Drilling).... 

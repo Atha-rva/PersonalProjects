@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameters vs Arguments</title>
+</head>
+<body>
+    <script>
+        // Rest Paramters 
+        function restShow(a,...args){
+            console.log("a: "+a);
+            console.log(args);
+        }
+        restShow(10,20,30,40,50);
+
+
+        // Arguments Object
+        function show(a){
+            console.log("a: "+a);
+            console.log(arguments);
+        }
+        show(10,20,30,40,50);
+    </script>
+</body>
+</html>

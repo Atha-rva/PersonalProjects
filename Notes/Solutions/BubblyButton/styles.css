@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bubbly-button {
+    font-size: 24px;
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #1c87c9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: transform 0.2s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the bubble doesn't go outside the button */
+}
+
+.bubbly-button:active {
+    transform: scale(0.98);
+}
+
+.bubbly-button .bubble {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s, opacity 0.6s;
+    z-index: 0; /* Ensures the bubble is behind the text */
+}
+
+.bubbly-button .bubble.animate {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}

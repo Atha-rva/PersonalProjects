@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Prototype Works in Javascript</title>
+  </head>
+  <body>
+    <script>
+      // function Mobile() {
+      //   // Code Implementation
+      // }
+
+      // var lg = new Mobile();
+
+      // console.log(lg.__proto__);
+      // console.log(Mobile.prototype);
+      // console.log(lg.a)
+
+      // function Mobile(){
+      //   this.a =10;
+      // }
+
+      // var lg=new Mobile();
+
+      // console.log(lg.a);
+
+      // function Mobile() {}
+      // Mobile.prototype.a = 20;
+      // var lg = new Mobile();
+      // console.log(lg.a);
+      // console.log(lg.__proto__.a);
+
+      // function Mobile() {
+      //   this.a = 20;
+      // }
+      // Mobile.prototype.a = 20;
+      // var lg = new Mobile();
+
+      // console.log(lg.a);
+
+      function Mobile() {}
+      console.log(Mobile.prototype);
+
+      var lg = new Mobile();
+      console.log(lg.__proto__ === Mobile.prototype);
+      console.log(Mobile === lg.__proto__.constructor);
+    </script>
+  </body>
+</html>

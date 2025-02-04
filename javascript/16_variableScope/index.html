@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = "I am  global variable";
+        function show(){
+            document.write(i+"<br/>");   // Inside Function
+        }
+        show();
+        document.write(i+"<br/>");  // Outside Function....
+
+
+        // Global variable can be access form everywhere.....
+        if(true){
+            document.write(i);
+        }else{
+            // REST OF CODE
+        }
+
+
+        // Global and local declaration.....
+
+        function display(){
+            a=20;
+            document.write(a+"<br/>");
+        }
+        display();
+        document.write(a+"<br>");
+
+
+
+        function word(){
+            var j="I am Local variable";
+            document.write(j+"<br/>");
+        }
+        word();
+        document.write(j+"<br/>");
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Outer function variables are accessible inside a inner functions....
+        // function show(){
+        //     var j="J a local variable of outer function";
+        //     document.write(j+"<br>");
+        //     function display(){
+        //         document.write(j+"<br>");
+        //     }
+        //     display();
+        // }
+        // show();
+
+
+        // Inner Functions variables are not accessible in outer function.... 
+
+        // function show(){
+        //     function display(){
+        //         var i="Welcome";
+        //         document.write(i+"<br>");
+        //     }
+        //     display();
+        //     var j="J a local variable of outer function";
+        //     document.write(i+"<br>");
+        // }
+        // show();
+
+
+        
+        // Inner Functions variables are not accessible in outer function.... 
+
+        function show(){
+            function display(){
+                i=10;
+                document.write(i+"<br>");
+            }
+            display();
+            var j="J a local variable of outer function";
+            document.write(i+"<br>");
+        }
+        show();
+    </script>
+</body>
+</html>

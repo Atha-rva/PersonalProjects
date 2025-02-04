@@ -1,0 +1,87 @@
+*  React AutoSave 
+
+https://www.npmjs.com/package/react-autosave?activeTab=readme
+
+
+*   How to Add a Interface of React Typescript Begineers
+
+https://medium.com/geekculture/react-typescript-how-to-add-interface-with-functional-component-typed-props-beginner-guide-4710d89f8881
+
+
+*  How to pass a data from a form to a table
+
+https://www.geeksforgeeks.org/how-to-pass-data-into-table-from-a-form-using-react-components/
+
+
+* Chrome Extenstion Development 
+
+https://youtu.be/0n809nd4Zu4?si=hIga4-wnd63sCqD9
+https://youtu.be/gtF2nHVjqFk?si=gvmNxDdFD3E0v9CP
+
+
+* Riffle Effect in a Button 
+
+https://codepen.io/campao/pen/EmPvbM
+https://codepen.io/imvisrut/pen/GRvvbJB
+
+
+* Radial Color Gradient 
+
+https://codepen.io/dangeloweb/pen/mdVvbRz
+https://codepen.io/vyvyy/details/YzbKRR
+
+
+*  Shadcen UI 
+
+https://ui.shadcn.com/
+
+
+* React Typescript 
+
+https://create-react-app.dev/docs/adding-typescript/
+
+*  Microsoft Fluent UI 
+
+https://react.fluentui.dev/?path=/docs/demos--demos
+
+*  Microsoft Fluent UI 
+
+https://fluent2.microsoft.design/get-started/develop
+
+
+* Microsoft Fluent UI (Packages)
+
+https://github.com/microsoft/fluentui
+
+* Custom Core Packages Repo
+
+https://github.com/rahulphatangare01/core-ui-package
+
+
+* Mobex + ReactJS
+
+https://www.youtube.com/watch?v=rgyqhTzkHeY&t=707s
+ 
+
+*  CSS Grid Techniques
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+*  CSS Animations (Google Animations)
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+* Button Text Animations
+
+https://ui8.net/becreativetemplates/products/iphone-15-pro-max-mockup?rel=muzli
+
+
+* Sliding Animations for a Form Page 
+
+https://medium.com/geekculture/22-sliding-form-for-website-3dd98b5e0ba6
+
+
+*  GraphQL 
+
+https://www.youtube.com/watch?v=YyUWW04HwKY
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firework Button</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #282c34;
+        margin: 0;
+      }
+
+      .button-container {
+        position: relative;
+      }
+
+      /* Button style */
+      .firework-button {
+        padding: 20px 40px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        background-color: #007bff;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+      }
+
+      .firework-button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Firework effect */
+      .firework {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        animation: burst 1s ease-out;
+        pointer-events: none;
+      }
+
+      /* Create multiple smaller fireworks particles */
+      @keyframes burst {
+        0% {
+          width: 50px;
+          height: 50px;
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+        100% {
+          width: 200px;
+          height: 200px;
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      /* Particle effect - You can add more particles */
+      .firework::before,
+      .firework::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #ff5722;
+        border-radius: 50%;
+        animation: particle 0.5s ease-out infinite;
+      }
+
+      .firework::before {
+        animation-delay: 0.1s;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      .firework::after {
+        animation-delay: 0.3s;
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+
+      @keyframes particle {
+        0% {
+          transform: scale(1) translate(0, 0);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(0) translate(20px, 20px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="firework-button" onclick="triggerFirework()">
+        Click Me
+      </button>
+      <!-- Firework animation will be appended here dynamically -->
+    </div>
+
+    <script>
+      // JavaScript function to trigger firework animation on button click
+      function triggerFirework() {
+        // Create firework div
+        const firework = document.createElement("div");
+        firework.classList.add("firework");
+
+        // Append firework to the button container
+        document.querySelector(".button-container").appendChild(firework);
+
+        // Remove firework after animation completes (1 second)
+        setTimeout(() => {
+          firework.remove();
+        }, 1000); // matches the animation duration
+      }
+    </script>
+  </body>
+</html>

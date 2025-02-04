@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/31800994/fit-text-in-container-without-breaking-word-using-html-css-only

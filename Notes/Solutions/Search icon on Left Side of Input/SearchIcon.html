@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Input Box</title>
+    <style>
+        .custom-input {
+            position: relative;
+            width: 318px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #F5F4F4;
+        }
+
+        .custom-input img {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            height: 15px;
+            width: auto;
+        }
+
+        .custom-input input[type="text"] {
+            width: calc(100% - 50px);
+            height: 100%;
+            padding-left: 50px;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-input">
+        <img src="https://s3.ap-south-1.amazonaws.com/dev.zitics.com/media/core/assets/image/Searchicon.svg" alt="icon">
+        <input type="text" placeholder="Search proposal, quere, chat...">
+    </div>
+</body>
+</html>
