@@ -1,0 +1,48 @@
+Remove t& c page 
+Layout changes  50 % and form 50% but ceter align 
+input placehoder padding left align 
+algin of registration is proper remove padding 
+next button postion 
+animation of form smootly 
+Auto fill property for login username and password 
+line on logo for default behavior 
+add gap in context bar for image and title 
+Remove all toast for succes
+ 
+thickness of a Green border on a hover a table row
+ 
+table size when  a data increases in a list 
+Context Bar text padding from both side left and right side.....
+ 
+gary Out same like in a add facility sublimit input 
+do in a Organization table PAN , Organization Name.....
+padding in a Placeholder of a Input.....
+Toast Fixes.....
+Change it to a Text Black in Add Propsal Text.....
+ 
+Model Should be Replace With a Context Bar..... 
+remove all the Toaster
+Animation in Add Propasal Head Section Background Color in Infinity.......
+it should take bydefault zero in DatePicker..... 
+Font for a Every on Typeing in a Input....
+ 
+on a Typeing the border should be green and when a a typeing stops that goes to default border color.... on a update only....
+ 
+on a Hover a Next and Back Button Should be Visible.....
+* Toaster Should Come One Above one .....
+Radio Button....    -----> (Done)
+Checkbox Button....
+ZGlobal Label Should be Bold in Checkbox
+
+
+
+Remove t& c page 
+Layout changes  50 % and form 50% but ceter align 
+input placehoder padding left align 
+algin of registration is proper remove padding 
+next button postion 
+animation of form smootly 
+Auto fill property for login username and password 
+line on logo for default behavior 
+add gap in context bar for image and title 
+Remove all toast for success 

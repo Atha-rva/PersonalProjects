@@ -1,0 +1,14 @@
+Bugs List
+ 
+ 
+ 
+Paps-1619  Basic Details - Registration - PAN / GST Not populating
+Paps-1606  Basic Profile - Registration Number
+Paps-1599  Basic Details - Orgnisation Background Text Area
+Paps-1597  Basic Details - Address Field Validation
+Paps-1596  Basic Details - Registration Validation
+Paps-1594  Basic Details - Organization Background Editor
+Paps-1593  Basic Details - Registration - Data not populating
+Paps-1579  Basic Details - Address Validations
+Paps-1578  Basic Details - Communication Details Validation
+Paps-1576  Basic Details - Basic Fields should be Pre-populated

@@ -1,0 +1,111 @@
+1)  Issue resloved Reagrding the Backspace when a Otp Fields are Empty
+2)  Refactoring Ui for a login Screen to a Present Praposal
+3)   Changeed the Requiremnts in a  terms & Conditions Page till the Present Praposal Page 
+4)   Started Working on a Exposure Screen (Added a radio Butoon and Next and back Button With onClick navigate)
+
+1) TagPicker with dropdown Issue Resloved 
+2) Checkbox Onoption Select Function added ,
+3) Tagpicker with Dropdown  OnSelectOption Added to get Data that we are Selectig 
+4) Same for the Radi
+5)  added and Format Validation for a GSTIN tagpicker on Eye Btn 
+
+
+
+
+
+
+CREATE ORGANIZATION AND ALL ORANIZATION BUGS
+1. Create organization 
+      1. validation border and icon for pan and GST 
+	  2. cross icon position 
+	  3. Dropdown option border color
+	     -- Dropdown gap in selector and option
+	     -- Dropdown  multi-select option checkbox color 
+		 -- after multi-select in dropdown input space between in selected option 
+	  4. scroll in dropdown 
+	        -- scroll behavior it should be transparent 
+	   5. font-size and font family 
+2. All organization 
+        1. Table issue 
+		     -- no sorting for proposal 
+			 -- background color for delete option 
+			 -- table is empty then sorting dropdown visibility not working 
+			 --  sorting dropdown position 
+			 -- proposal count in not working 
+
+3. Navbar behavior
+       1. user name is to long then how to manage
+ 
+4. In side menu Dashboard option is Disable 
+
+
+
+If OTP is not valid then display OTP error message and all 4 boxes should be in red
+
+
+*  font , FontFamily for a Read Conditions in a Login Screen...
+ 
+*  In forgot password Screen Back to Login  Space Adjustment....
+ 
+*  passoword Dosnot Match donot Show Toast ,  only  Show red  border color and pass a message that password dosnot match....
+ 
+   * Toaster Should Come When a Password Dosnot Match....   ----> In New Password Screen....
+ 
+*   Toaster Should Not Come for a Success in Set Password Successfully Screen....
+ 
+*   Delete icon in a Oranization Table.....
+ 
+*   Hover Property in a heading Section in a organization table.....
+ 
+*   White backgroundColor in a Content of a table....
+ 
+*   FontWeight for a  Dropdown in a Organization  Model
+ 
+*   BorderRadius  in a Organization Model.....
+ 
+*   Alignment in a Organization Model....
+ 
+*   Star and Cursor in a Organization Table....
+ 
+*  Alignment of a green tick logo and a star is not align in one line....
+ 
+*  edit and delete button width should be decrease....
+ 
+*  green tick and a org status bar alignment in a vertical ....
+ 
+*  Alignment in a list of the propsal......
+ 
+   *  First Letter Captial in a List of a propsal header.... consistency....
+ 
+   *  Content on a Organization Context Section....
+ 
+*  Stepper Should be ByDefault Open when we go on that particular section....
+ 
+ 
+* In a List Propsal When we Click on a particular list then it should go to Present Propsal and reference Name should be displayed......
+ 
+ 
+*  in List of a propsal it should be last updated in a header list last column....
+ 
+*   When we click on it it should go to last updated pagse....
+ 
+*   Propsal Code Should be Present in a Present Propsal section and edit icon should be in a edit mode now....
+ 
+ 
+*  Add facility table should not be a Dummy Data  if there is no Data then display no data....
+ 
+ 
+*  Error in a Dropdown Content Opening while Scrolling background Screen also scroll....
+ 
+*  Scroll should be Occur in a  that Section in a Add Facility of a sublimit....
+ 
+ 
+*  API Issue for  a  add  data in add facility for a  Add Facility  model....
+
+s
+ 
+*   BorderRadius  in a Organization Model.....
+ 
+*   Alignment in a Organization Model....
+ 
+*  Scroll should be Occur in a  that Section in a Add Facility of a sublimit....

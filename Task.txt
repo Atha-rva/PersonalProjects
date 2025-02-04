@@ -1,0 +1,131 @@
+Feb(1-15)/2024
+
+=> 
+		1) Login and Registration Form Using HTML , CSS , JS.
+		2) FarmLogin Forum Using Tailwind CSS.			
+		3) Login From in ReactJS Using Tailwind CSS
+		4) Landing Page Using ReactJS Tailwind CSS
+		5) Branding Page in ReactJS Using Tailwind CSS
+		6) Grocery Page Using Tailwind CSS
+		7) TextUtils Page in ReactJS Using Tailwind CSS
+
+Feb-16/2024
+
+		"1) Rest API
+		 2) Content Type in REST API"""				
+				
+				
+Feb-18/2024
+
+		   "1) Props
+			2) Use State
+			3) Use Effect
+			4) Memo
+			5) Learn Lifting State
+			6) Custom Hooks
+			7) CallBack
+			8) Events"		
+
+Feb-20/2024
+
+			1) How to Show Online or Offline on Real Time Basis (Functionality)
+			----> useing a Navigator.onLine Method
+			2) Firebase Database with ReactJs CURD Operation
+			
+			
+Feb-23/2024
+			
+			1) 1) Zitics Login Page Using Fluent 2 CSS
+			
+Feb-24/2024
+
+			1)  1) Intern Task-1 Create a Radio Button , Dropdown , TextBox Component Using Fluent 2 in ReactJs.... 
+				
+				
+				
+Feb-25/2024
+	
+			1) Intern Task-2 Create Drawer and SideBar Component in Fluent 2 Using ReactJs.... 
+			
+
+Feb-26/2024 
+
+			1) Intern Task-3 Create an Register Page Ui in Fluent 2 Using ReactJs... 
+			
+Feb-27/2024
+
+			1) Intern Task-4  Create an Login Page Ui in Fluent 2 Using ReactJs....
+
+
+Feb-28/2024
+						
+			1) Explore the Fluent UI V9 Documentation.... 
+			
+
+Feb-29/2024 
+ *
+			1) How to Use ReactJS With Typescript....
+			
+
+Feb 1/2024 
+
+			1) Auth Routing.....
+			2) Session Storage....
+			3) Local Storage.... 
+			4) Cache Storage....
+			
+			
+Feb-2/2024 ----> Feb-6/2024  
+
+			1) React Testing
+
+Feb-7/2024
+
+			1) Fluent Right Side Container.... 
+			
+Feb-11/2024 
+
+			1) Media Query  FLuent 2 in ReactJs With Typescript.... 
+			2) Data Passing Through API in ReactJS Using Typescript.... 
+			
+			
+Feb-12/2024 
+
+			1) Streaming API.... 
+			2) SSE Server Side Rendering.... 
+			3) Connection Through Web Sockets Implementation in ReactJS With Typescript... 
+			
+			
+Feb-13/2024 
+
+			1) Right Container in Zitics UI ----> Creation.....
+			
+			
+Feb-14/2024 
+
+			1) Brief Introduction Regarding Cloud Computing... 
+			
+			2) Cloud Computing.... Descussion (Session on Saturday and Sunday).... 
+			
+			
+Feb-15/2024
+
+			1)	Crypto.js 
+				For Encryption and Decryption.... 
+				
+				*	For  Passing Data From Frontend to Backend... 
+				
+				https://youtu.be/OsTTC41YWaE?si=2TiB-roL_AfKO3ol
+				
+				
+				
+
+				
+			
+			
+			
+			
+			
+			
+			
+			
