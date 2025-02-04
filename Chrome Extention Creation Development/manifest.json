@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Zitics",
+  "version": "1.0",
+  "description": "Easily connect to Zitics' suite of tools and services with our handy Chrome extension. One-click access to your account and seamless navigation through our software solutions, right from your browser.",
+  "permissions": ["contextMenus", "tabs", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/zitics-16.png",
+      "24": "icons/zitics-24.png",
+      "32": "icons/zitics-32.png",
+      "48": "icons/zitics-48.png",
+      "64": "icons/zitics-64.png",
+      "128": "icons/zitics-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/zitics-16.png",
+    "24": "icons/zitics-24.png",
+    "32": "icons/zitics-32.png",
+    "48": "icons/zitics-48.png",
+    "64": "icons/zitics-64.png",
+    "128": "icons/zitics-128.png"
+  }
+}
