@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widh=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    <script>
+        window.localStorage.setItem('username','geekyshows');
+        window.localStorage.setItem('email','DeshmukhAtharva024@gmail.com');
+
+        // If We Want to See That Data at Console ....
+        console.log(localStorage);
+
+        // To Get a Value.... 
+        console.log(localStorage.getItem('email'));
+        console.log(localStorage.length);
+
+        // To Get a Key.... 
+        console.log(localStorage.key(0));
+
+        // To Remove a Item....
+        localStorage.removeItem('email');
+
+
+        // To Remove all Data.... 
+
+        localStorage.clear();
+    </script>
+</body>
+</html>

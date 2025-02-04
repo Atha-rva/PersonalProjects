@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Timer App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="timer-app">
+      <h1>Enhanced Timer App</h1>
+      <div class="timer-input">
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" placeholder="HH" min="0" max="23" />
+        <label for="minutes">Minutes:</label>
+        <input type="number" id="minutes" placeholder="MM" min="0" max="59" />
+        <label for="seconds">Seconds:</label>
+        <input type="number" id="seconds" placeholder="SS" min="0" max="59" />
+      </div>
+      <button id="start-timer">Start Timer</button>
+      <div id="timer-display">00:00:00</div>
+      <div id="timer-message"></div>
+    </div>
+
+    <!-- Default Bell Sound -->
+    <audio id="bell-sound">
+      <source
+        src="https://www.soundjay.com/button/beep-07.wav"
+        type="audio/wav"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-button:hover {
+  background-color: #0056b3;
+}
+
+#task-info {
+  margin: 10px 0;
+  color: #555;
+  text-align: center;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#todo-list li {
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background-color: #eaeaea;
+}
+
+#todo-list li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#todo-list li button:hover {
+  background-color: #cc0000;
+}
+
+#clear-all-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#clear-all-button:hover {
+  background-color: #cc0000;
+}

@@ -1,0 +1,336 @@
+*** Configuring Git... ***
+
+>  git --version
+
+   *	To Check the git Version
+   
+>  git config --global user.name "Atharva"
+
+	Configuring My Name 
+	
+>   git config --global user.email "deshmukhatharva024@gmail.com"
+
+	Configuring My Email... 
+	
+>    git config --list
+
+	 *  COnfiguring For Last Time When We Worked on It...
+	 
+	 
+>   To clone a Repo
+
+	git clone https://Aatharva123@bitbucket.org/zitics/caps-web-ui.git  
+	
+> 	git status
+
+	To Check the Git Status
+	
+*	To See All The File We Can Write ls Command 
+
+>	ls 
+	
+	*	Through ls Command We Can View All the File Inside the Folder....
+	
+>   ls -a
+
+	*	Through ls -a We Can View our all Hidden Files....
+	
+	
+*	After Modification of a File There is Two Step Process... 
+
+	Step 1 :- add 
+	Step 2 :- commit
+	
+	
+
+
+Untracked files: Untracked Files are the Those Which are Not Being Tracked If you want to add then you can add it...
+
+untracked 
+
+	new files that git doesn't yet track 
+	
+modified 
+
+	changed
+	
+staged 
+	
+	file is ready to be committed 
+	
+unmodified 
+
+	unchanged 
+	
+	
+change(modified) /  newfile (untracked)	
+				 |
+				 |
+				 |
+				 add ----> After adding it Becomes (staged)
+				 |
+				 |
+				 |
+				 commit (unchanged)
+				 
+				 
+
+Add & Commit 
+
+> add -> adds new or changed files in your working directory to the Git Staging area... 
+
+	git add <--File name -->
+	
+> commit - it is the record of changes 
+
+	git commit -m "Some Message"
+	
+	
+    ------------
+	|			|
+	|			|
+	|			|  ----> add          -----> Commit 
+	|			|       (engage Area)
+	-------------			 
+	
+	
+*	To add a Specific File 
+
+	> git add index.html 
+	
+*	To add the All File at a Time 
+
+	> git add . 
+	
+			
+		
+> commit - it is the record of changes 
+
+	git commit -m "Some Message"
+	
+	
+
+
+> push - upload local repo content to remote repo 
+
+	> git push origin main 
+	
+---> push - upload local repo content to remote repo.... 
+
+
+git push ----> We are Pushing a Code from local repo to remote repo  on main Branch
+
+
+
+*	To Start a Project From Our Local Devices we can use Init Command... 
+
+
+	init :- used to create a new git repo.... 
+	
+
+	git init 
+	
+	git remote add origin <--link-->
+	
+	git remote -v   (to verify remote)
+	
+	git branch (to check branch)
+	
+	git branch -M main  (to rename branch)
+	
+	git push origin main 
+	
+	
+	
+	
+New Project 
+
+*	ZiticsLocalProject 
+
+	*	Through Cmd Type mkdir -----> To Make New Directory....
+	
+	
+PS D:\Core\Zitics\ZiticsLocalProject> mkdir localrepo
+
+
+Directory: D:\Core\Zitics\ZiticsLocalProject
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/26/2024   2:46 PM                localrepo
+
+
+git init ---> New Empty Repo is Created... 
+
+
+PS D:\Core\Zitics\ZiticsLocalProject\localrepo> git init
+Initialized empty Git repository in D:/Core/Zitics/ZiticsLocalProject/localrepo/.git/
+
+
+To Push We Need to Run One Command.... 
+
+	>	git remote add origin <--Link-->
+	
+	
+----> To add a New github Repo.... 
+
+
+---> To Check the Origin We Can Type a Command 
+
+
+   > git remote -v 
+   
+   
+   
+*	WorkFlow For Local Git.... 
+
+
+[Github Repo ----> Clone ---> Changes ---> add ---> commit ---> push]
+
+
+*	Git Branches
+
+
+*	To Merge a Code... 
+
+
+*	Branch Commands 
+
+	*	git branch ----> (to check branch)
+	
+	*	git branch -M main  ----> (to rename branch)
+	
+	*	git checkout <-- branch name --> (to navigate)
+	
+	*	git checkout -b <- new branch name ->  (to create new branch)
+	
+	*	git branch -d <- branch name -> (to delete branch)
+	
+	
+	
+	
+	Example 
+	
+	+ cd ZiticsLocalProject
+PS D:\Core\Zitics\ZiticsLocalProject> mkdir localrepos
+
+
+    Directory: D:\Core\Zitics\ZiticsLocalProject
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/26/2024   5:10 PM                localrepos
+
+
+
+
+# To Merge a Branches.... 
+
+
+Way 1 
+
+	> git diff <-branch name->  (to compare commits, branches, files & more)
+	
+	> git merge <-branch name ->  (to merge 2 branches)
+	
+	
+Way 2 
+
+	Create a PR 
+	> Create a Pull Request.... 
+	
+
+*	It Tells you tell others about changes you've pushed to a branch in a repository on GitHub
+
+
+
+*	Pull Command
+
+	*	git pull origin main 
+	
+	used to fetch and download content from a remote repo 
+	and immediately update the local repo to match that content... 
+	
+	
+*	Resolving Merge Conflicts 
+
+	*	An event that takes place when Git is unable 
+		to automatically resolve differences in code between two commits.
+		
+	*	Accept Current Change.... 
+	
+	*	Accept Incoming Change.... 
+	
+	*	Accept Both Change.... 
+	
+	*	Compare Changes... 
+	
+	
+	
+*	Undoing Chnages 
+
+	Case 1: staged changes 
+	
+		git reset <- file name -> 
+		git reset 
+		
+	Case 2: commited changes (for one commit)
+	
+		git reset HEAD-1 
+		
+	Case 3: commited changes (for many commits)
+	
+		git reset <- commit hash -> 
+		git reset --hard <-commit hash -> 
+		
+
+> git log ---> To Check All the Logs.... 
+
+
+*	Fork 
+
+	*	A Fork is a New Respository that shares code 
+		and visibility settings with the original "upstream" repository...
+		
+	Fork is a rough copy.... 
+	
+	
+		
+
+
+
+Practice Part 1
+
+
++ cd ZiticsLocalProject
+PS D:\Core\Zitics\ZiticsLocalProject> mkdir localrepos
+
+
+    Directory: D:\Core\Zitics\ZiticsLocalProject
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/26/2024   5:10 PM                localrepos
+
+
+
+
+
+Practice Part-2
+
+
+
+
+Practice Part-3
+
+:
+
+
+
+Practice Part-4
+
+
+

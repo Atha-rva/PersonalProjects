@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.timer-app {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.timer-input {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 8px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#timer-display {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+#timer-message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #dc3545;
+}

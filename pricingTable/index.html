@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table with Toggle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pricing-table">
+      <h1>Our Pricing Plans</h1>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="pricing-toggle" />
+          <span class="slider"></span>
+        </label>
+        <p id="toggle-label">Monthly</p>
+      </div>
+      <div class="plans">
+        <!-- Basic Plan -->
+        <div class="plan" data-monthly="10" data-yearly="100">
+          <h2>Basic</h2>
+          <p class="price">
+            $<span class="price-value">10</span
+            ><span class="billing-cycle">/month</span>
+          </p>
+          <ul>
+            <li>5 Projects</li>
+            <li>10GB Storage</li>
+            <li>Email Support</li>
+          </ul>
+          <button>Choose Plan</button>
+        </div>
+
+        <!-- Popular Plan -->
+        <div class="plan popular" data-monthly="20" data-yearly="200">
+          <h2>Pro</h2>
+          <p class="price">
+            $<span class="price-value">20</span
+            ><span class="billing-cycle">/month</span>
+          </p>
+          <ul>
+            <li>50 Projects</li>
+            <li>100GB Storage</li>
+            <li>Priority Support</li>
+          </ul>
+          <button>Choose Plan</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan" data-monthly="50" data-yearly="500">
+          <h2>Premium</h2>
+          <p class="price">
+            $<span class="price-value">50</span
+            ><span class="billing-cycle">/month</span>
+          </p>
+          <ul>
+            <li>Unlimited Projects</li>
+            <li>1TB Storage</li>
+            <li>Dedicated Support</li>
+          </ul>
+          <button>Choose Plan</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
