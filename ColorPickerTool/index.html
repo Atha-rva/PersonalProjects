@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="color-picker-container">
+    <h1>Color Picker Tool</h1>
+    <div class="color-display" id="color-display"></div>
+    <input type="color" id="color-input" />
+    <input type="text" id="color-code" placeholder="#000000 or rgb(0,0,0)" />
+    <button id="apply-color">Apply Color</button>
+    <div class="color-values">
+      <p>Hex: <span id="hex-value">#000000</span></p>
+      <p>RGB: <span id="rgb-value">rgb(0, 0, 0)</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
